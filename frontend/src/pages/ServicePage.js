@@ -181,6 +181,51 @@ const ServicePage = ({ type }) => {
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.description} />
         <link rel="canonical" href={service.canonical} />
+        {type === 'ouverture-porte' && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Serrure Minute",
+              "description": service.description,
+              "url": service.canonical,
+              "telephone": "+33786356139",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "135 Avenue Victor Hugo",
+                "addressLocality": "Fréjus",
+                "postalCode": "83600",
+                "addressRegion": "Var",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "43.433",
+                "longitude": "6.737"
+              },
+              "openingHours": [
+                "Mo 00:00-24:00",
+                "Tu 00:00-24:00", 
+                "We 00:00-24:00",
+                "Th 00:00-24:00",
+                "Fr 00:00-24:00",
+                "Sa 00:00-24:00",
+                "Su 00:00-24:00"
+              ],
+              "areaServed": {
+                "@type": "State",
+                "name": "Var"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "127"
+              },
+              "priceRange": "€€",
+              "servesCuisine": "Emergency Locksmith Services"
+            })}
+          </script>
+        )}
       </Helmet>
 
       {/* Hero Section */}
