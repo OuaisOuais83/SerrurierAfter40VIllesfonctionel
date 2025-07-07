@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { DoorOpen, Lock, Key, Shield, Clock, Star, Phone, CheckCircle } from "lucide-react";
+import { DoorOpen, Lock, Key, Shield, Clock, Star, Phone, CheckCircle, AlertTriangle, Euro, Award } from "lucide-react";
 import Footer from "../components/Footer";
 
 const ServicePage = ({ type }) => {
@@ -20,6 +20,19 @@ const ServicePage = ({ type }) => {
         name: "Sophie M.",
         city: "Fréjus",
         text: "Intervention très rapide après que ma porte se soit claquée. L'artisan est arrivé en 20 minutes et a ouvert ma porte sans aucun dégât."
+      },
+      content: {
+        intro: "Votre porte s'est claquée et vous vous retrouvez bloqué dehors ? Ne paniquez pas ! Serrure Minute intervient 24h/24 et 7j/7 dans tout le département du Var pour résoudre ce problème fréquent mais stressant. Nos serruriers experts utilisent des techniques professionnelles pour ouvrir votre porte sans dégât dans 95% des cas.",
+        causes: [
+          "Vent violent qui claque la porte",
+          "Clés oubliées à l'intérieur",
+          "Serrure défaillante qui se bloque",
+          "Porte qui se ferme automatiquement",
+          "Problème de poignée ou de mécanisme"
+        ],
+        process: "Notre méthode d'intervention respecte votre propriété. Nos artisans arrivent équipés d'outils professionnels spécialisés dans l'ouverture fine. Nous commençons toujours par les techniques les moins invasives : manipulation de la serrure, utilisation de radio ou d'outils de crochetage professionnel. Le perçage n'est utilisé qu'en dernier recours et uniquement avec votre accord.",
+        price: "Le tarif pour l'ouverture d'une porte claquée varie selon la complexité et l'heure d'intervention. Nous pratiquons des prix transparents conformes aux tarifs officiels de la profession. Un devis gratuit vous est systématiquement remis avant toute intervention. Nos prestations sont souvent remboursées par votre assurance habitation.",
+        emergency: "En cas d'urgence absolue (enfant seul à l'intérieur, personne âgée, problème médical), nous priorisons votre intervention et nous nous engageons à arriver en moins de 20 minutes dans un rayon de 30km autour de Fréjus."
       }
     },
     "serrure-bloquee": {
@@ -35,6 +48,20 @@ const ServicePage = ({ type }) => {
         name: "Benoît L.",
         city: "Hyères",
         text: "Serrure complètement bloquée un dimanche. L'équipe est venue rapidement et a réparé sans changer toute la serrure."
+      },
+      content: {
+        intro: "Une serrure bloquée ou une clé cassée dans la serrure peut transformer votre journée en cauchemar. Ces problèmes techniques nécessitent l'intervention d'un professionnel équipé d'outils spécialisés. Serrure Minute dispose d'une expertise de plus de 15 ans dans le dépannage de serrures de tous types : cylindre européen, serrure multipoints, serrure à gorges, serrure électronique.",
+        causes: [
+          "Usure naturelle du mécanisme de serrure",
+          "Clé forcée ou tournée trop brutalement",
+          "Corps étranger dans le cylindre",
+          "Gel en hiver qui bloque le mécanisme",
+          "Tentative d'effraction qui endommage la serrure",
+          "Clé usée qui se casse dans le cylindre"
+        ],
+        process: "Notre diagnostic commence par une analyse précise du type de blocage. Pour une serrure bloquée, nous déterminons si le problème vient du cylindre, du mécanisme interne ou de la poignée. Pour une clé cassée, nous utilisons des extracteurs professionnels pour retirer le morceau sans endommager le cylindre. Dans 80% des cas, nous pouvons réparer sans changer la serrure complète.",
+        price: "Nos tarifs de dépannage serrure sont fixes et transparents. Le prix varie selon la complexité de l'intervention et les pièces à remplacer. Un simple déblocage coûte moins cher qu'un remplacement de cylindre. Tous nos devis sont gratuits et détaillés. Nous acceptons les paiements par carte bancaire et chèque.",
+        emergency: "Nos camions d'intervention sont équipés d'un stock important de cylindres, serrures et pièces détachées des principales marques : Fichet, Vachette, JPM, Muel, Picard. Cela nous permet de réparer immédiatement la plupart des pannes."
       }
     },
     "perte-cles": {
@@ -50,6 +77,20 @@ const ServicePage = ({ type }) => {
         name: "Isabelle R.",
         city: "Draguignan",
         text: "J'ai perdu mes clés un dimanche soir. Malgré l'heure tardive, un serrurier est venu m'ouvrir ma porte. Service de qualité !"
+      },
+      content: {
+        intro: "Perdre ses clés est l'une des situations les plus stressantes du quotidien. Que vous les ayez perdues en rentrant du travail, lors d'une sortie ou même chez vous, Serrure Minute propose une solution complète : ouverture immédiate, sécurisation temporaire et remplacement définitif. Notre service 24h/24 vous évite de passer la nuit dehors.",
+        causes: [
+          "Clés tombées pendant une promenade",
+          "Clés oubliées dans un lieu public",
+          "Clés volées lors d'un cambriolage de voiture",
+          "Clés perdues lors d'un déménagement",
+          "Clés cassées qui ne permettent plus l'ouverture",
+          "Trousseau égaré avec toutes les clés"
+        ],
+        process: "Après ouverture de votre porte, nous évaluons la situation sécuritaire. Si vos clés ont été volées ou perdues dans un lieu identifiable, nous recommandons fortement le changement immédiat de la serrure pour éviter toute intrusion malveillante. Si la perte semble accidentelle et sans risque, nous pouvons nous contenter de faire refaire des clés. Nous vous conseillons objectivement selon votre situation.",
+        price: "Le coût d'une intervention pour perte de clés comprend l'ouverture de porte plus les éventuels travaux de sécurisation. Faire refaire des clés sur un cylindre existant coûte beaucoup moins cher qu'un changement complet de serrure. Nous vous expliquons toutes les options avec leurs tarifs respectifs pour que vous puissiez choisir en connaissance de cause.",
+        emergency: "En cas de perte de clés avec suspicion de vol, nous intervenons en urgence absolue car votre sécurité est en jeu. Nous pouvons installer temporairement un verrou de sécurité en attendant le changement définitif de la serrure principale."
       }
     },
     "apres-cambriolage": {
@@ -65,6 +106,20 @@ const ServicePage = ({ type }) => {
         name: "Karim M.",
         city: "La Seyne",
         text: "Après un cambriolage, ils ont sécurisé ma porte immédiatement. Travail professionnel et prise en charge par l'assurance."
+      },
+      content: {
+        intro: "Être victime d'un cambriolage est un traumatisme qui nécessite une réaction immédiate pour sécuriser votre domicile. Serrure Minute comprend l'urgence de la situation et intervient dans l'heure pour remettre votre logement en sécurité. Nos équipes travaillent en coordination avec les forces de l'ordre et les experts d'assurance pour faciliter vos démarches.",
+        causes: [
+          "Porte forcée avec serrure endommagée",
+          "Fenêtre brisée nécessitant une condamnation",
+          "Serrure crochetée ou percée par les cambrioleurs",
+          "Porte d'entrée arrachée ou déformée",
+          "Points de fermeture multiples endommagés",
+          "Système de sécurité neutralisé"
+        ],
+        process: "Notre intervention post-cambriolage suit un protocole strict : sécurisation immédiate des accès, évaluation des dommages, établissement d'un devis détaillé pour l'assurance, remplacement provisoire ou définitif des éléments endommagés. Nous photographions tous les dégâts pour faciliter votre dossier d'indemnisation. Nos factures sont directement acceptées par toutes les compagnies d'assurance.",
+        price: "Les travaux de sécurisation après cambriolage sont généralement pris en charge intégralement par votre assurance habitation. Nous avançons les frais et nous occupons de toute la facturation directe avec votre assureur. Vous n'avez aucun frais à débourser, sauf éventuelle franchise selon votre contrat.",
+        emergency: "Nous comprenons le stress post-cambriolage. C'est pourquoi nous proposons un accompagnement complet : conseil en sécurisation, mise en relation avec des vitriers partenaires, recommandations pour améliorer la sécurité future de votre domicile. Notre objectif est de vous redonner confiance dans votre sécurité."
       }
     }
   };
@@ -78,7 +133,7 @@ const ServicePage = ({ type }) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen pt-20"
+      className="min-h-screen pt-24"
     >
       <Helmet>
         <title>{service.metaTitle}</title>
@@ -129,49 +184,107 @@ const ServicePage = ({ type }) => {
         </div>
       </section>
 
-      {/* Service Details */}
+      {/* Introduction détaillée */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="prose prose-lg max-w-none"
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                {service.title} dans le Var (83)
+              </h2>
+              <p className="text-gray-700 leading-relaxed text-lg mb-8">
+                {service.content.intro}
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Causes communes */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Causes fréquentes
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {service.content.causes.map((cause, index) => (
+                  <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md">
+                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-5 h-5 text-red-600" />
+                    </div>
+                    <p className="text-gray-700">{cause}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Méthode d'intervention */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Content */}
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+              >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
                   Notre méthode d'intervention
                 </h2>
-                <div className="space-y-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {service.content.process}
+                </p>
+                <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                       <CheckCircle className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Intervention soignée</h3>
-                      <p className="text-gray-600">Nos artisans utilisent des techniques professionnelles pour préserver votre serrure.</p>
+                      <p className="text-gray-600">Respect total de votre propriété avec techniques non destructives</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                      <CheckCircle className="w-5 h-5 text-blue-600" />
+                      <Award className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">Outils certifiés</h3>
-                      <p className="text-gray-600">Équipement professionnel pour tous types de serrures modernes.</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Outils professionnels</h3>
+                      <p className="text-gray-600">Équipement de pointe pour tous types de serrures</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                      <CheckCircle className="w-5 h-5 text-purple-600" />
+                      <Shield className="w-5 h-5 text-purple-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Garantie 1 an</h3>
-                      <p className="text-gray-600">Tous nos travaux sont garantis 1 an pour votre tranquillité.</p>
+                      <p className="text-gray-600">Tous nos travaux sont garantis pour votre tranquillité</p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              {/* Image */}
-              <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="relative"
+              >
                 <img
                   src={service.image}
                   alt={service.title}
@@ -182,7 +295,44 @@ const ServicePage = ({ type }) => {
                   <p className="text-sm font-medium">Intervention professionnelle</p>
                   <p className="text-lg font-bold">Sans dégât • Rapide • Efficace</p>
                 </div>
-              </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tarifs et urgence */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <div className="flex items-center space-x-3 mb-6">
+                  <Euro className="w-8 h-8" />
+                  <h3 className="text-2xl font-bold">Tarifs transparents</h3>
+                </div>
+                <p className="text-blue-100 leading-relaxed">
+                  {service.content.price}
+                </p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <div className="flex items-center space-x-3 mb-6">
+                  <Clock className="w-8 h-8" />
+                  <h3 className="text-2xl font-bold">Urgence 24h/24</h3>
+                </div>
+                <p className="text-blue-100 leading-relaxed">
+                  {service.content.emergency}
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
