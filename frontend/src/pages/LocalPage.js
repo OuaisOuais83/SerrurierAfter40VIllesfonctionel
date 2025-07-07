@@ -211,7 +211,7 @@ const LocalPage = ({ city }) => {
               Zones d'intervention à {cityData.name}
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Notre serrurier se déplace en 30 minutes maximum dans tous les quartiers de {cityData.name}, notamment :
+              Notre serrurier se déplace en 30 minutes maximum dans tous les quartiers de {cityData.name}, notamment dans les secteurs résidentiels, les zones pavillonnaires, les résidences sécurisées et les centres-villes historiques. Nous connaissons parfaitement la topographie locale, les heures de pointe et les meilleurs itinéraires pour optimiser nos délais d'intervention.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
