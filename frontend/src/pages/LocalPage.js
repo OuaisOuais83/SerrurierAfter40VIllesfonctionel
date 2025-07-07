@@ -147,7 +147,7 @@ const LocalPage = ({ city }) => {
               Nos services de serrurerie à {cityData.name}
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Serrure Minute propose :
+              Serrure Minute propose l'ensemble des prestations de serrurerie d'urgence pour particuliers et professionnels :
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
