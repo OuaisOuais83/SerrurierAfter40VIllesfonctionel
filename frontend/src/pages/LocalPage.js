@@ -337,27 +337,84 @@ const LocalPage = ({ city }) => {
         </div>
       </section>
 
-      {/* H2 : FAQ Serrurier [Ville] */}
+      {/* H2 : FAQ Serrurier [Ville] avec H3 structurés */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              FAQ Serrurier {cityData.name}
+              FAQ serrurier {cityData.name}
             </h2>
             
-            <div className="space-y-6">
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-md"
-                >
-                  <h3 className="font-semibold text-gray-900 mb-3 text-lg">{faq.question}</h3>
-                  <p className="text-gray-700">{faq.answer}</p>
-                </motion.div>
-              ))}
+            <div className="space-y-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="bg-white p-8 rounded-xl shadow-md"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Quel est le prix d'une ouverture de porte à {cityData.name} ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Nos tarifs dépendent du type de porte et de l'heure d'intervention. Nous fournissons toujours un devis gratuit et transparent avant l'intervention à {cityData.name}. Pour une ouverture de porte claquée standard en journée, comptez entre 89€ et 150€ TTC. Les tarifs de nuit et week-end sont majorés selon les barèmes officiels. Aucune surprise : le prix est annoncé et accepté avant toute intervention.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="bg-white p-8 rounded-xl shadow-md"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Intervenez-vous la nuit ou les jours fériés à {cityData.name} ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Oui, nous intervenons 24h/24, 7j/7, même les dimanches et jours fériés dans tous les quartiers de {cityData.name}. Notre service d'urgence ne ferme jamais. Un technicien qualifié peut être dépêché chez vous à toute heure, que ce soit en pleine nuit, un dimanche matin ou un jour férié. Notre central d'appel reste joignable en permanence au 07 86 35 61 39.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="bg-white p-8 rounded-xl shadow-md"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Est-ce remboursé par mon assurance habitation ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Oui, dans la plupart des cas, votre assurance habitation ou votre carte bancaire prend en charge l'intervention. Nous remettons une facture agréée assurance immédiatement après l'intervention à {cityData.name}. Nous pouvons également vous accompagner dans vos démarches administratives et effectuer un tiers payant avec certaines compagnies. Vérifiez vos garanties "assistance habitation" ou "protection juridique".
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="bg-white p-8 rounded-xl shadow-md"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Votre serrurier à {cityData.name} endommage-t-il la porte ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Non, l'ouverture se fait sans dégât dans 95% des cas grâce à nos outils professionnels et à l'expertise de nos techniciens. Nous utilisons des techniques d'ouverture fine qui préservent votre serrure et votre porte. Seules les serrures défaillantes ou très anciennes peuvent nécessiter un remplacement. Dans tous les cas, nous vous informons avant toute action irréversible et cherchons toujours la solution la moins invasive possible.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="bg-white p-8 rounded-xl shadow-md"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Combien de temps pour arriver à {cityData.name} ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Notre délai d'intervention moyen à {cityData.name} est de 15 à 30 minutes selon votre quartier et l'heure d'appel. Nous disposons de plusieurs techniciens répartis stratégiquement dans le Var pour optimiser les temps de trajet. En cas d'urgence absolue (enfant enfermé, personne âgée en détresse), nous priorisons votre intervention. Vous êtes tenu informé en temps réel de l'heure d'arrivée estimée de votre serrurier.
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
