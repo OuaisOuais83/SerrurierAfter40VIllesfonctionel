@@ -282,9 +282,16 @@ const LocalPage = ({ city }) => {
               </div>
             </div>
             
-            <p className="text-gray-700">
-              Serrure Minute est présent dans le Var depuis plus de 10 ans, et a réalisé plus de 500 interventions à {cityData.name} chaque année. Votre satisfaction est notre priorité.
+            <p className="text-gray-700 mb-8">
+              Serrure Minute est présent dans le Var depuis plus de 10 ans, et a réalisé plus de 500 interventions à {cityData.name} chaque année. Nos techniciens connaissent parfaitement la géographie locale, les types d'habitat et les spécificités architecturales de {cityData.name}. Cette expertise locale nous permet d'optimiser nos délais d'intervention et d'adapter nos solutions aux contraintes spécifiques de votre quartier. Votre satisfaction est notre priorité absolue.
             </p>
+            
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6">
+              <h3 className="font-semibold text-gray-900 mb-3">Notre engagement qualité à {cityData.name}</h3>
+              <p className="text-gray-700">
+                Entreprise certifiée, nos interventions respectent les normes de sécurité en vigueur. Nous proposons une prise en charge complète : diagnostic gratuit, devis transparent, intervention soignée, nettoyage du chantier et conseils personnalisés pour renforcer votre sécurité.
+              </p>
+            </div>
           </div>
         </div>
       </section>
