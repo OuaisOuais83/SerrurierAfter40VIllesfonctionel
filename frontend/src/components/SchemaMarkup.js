@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const SchemaMarkup = () => {
   const schema = {
@@ -66,13 +65,24 @@ const SchemaMarkup = () => {
     }
   };
 
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.innerHTML = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup: remove script when component unmounts
+      const scripts = document.head.querySelectorAll('script[type="application/ld+json"]');
+      scripts.forEach(script => {
+        if (script.innerHTML === JSON.stringify(schema)) {
+          document.head.removeChild(script);
+        }
+      });
+    };
+  }, []);
+
+  return null;
 };
 
 export default SchemaMarkup;
