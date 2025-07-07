@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { DoorOpen, Lock, Key, Shield, Clock, Star, Phone, CheckCircle, AlertTriangle, Euro, Award } from "lucide-react";
+import { DoorOpen, Lock, Key, Shield, Clock, Star, Phone, CheckCircle, AlertTriangle, Euro, Award, MapPin } from "lucide-react";
 import Footer from "../components/Footer";
 
 const ServicePage = ({ type }) => {
