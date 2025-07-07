@@ -478,15 +478,19 @@ const ServicePage = ({ type }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+33786356139"
-              className="bg-white text-red-600 px-8 py-4 rounded-full font-bold hover:bg-red-50 transition-colors"
+              className="bg-white text-red-600 px-8 py-4 rounded-full font-bold hover:bg-red-50 transition-colors flex items-center justify-center space-x-2"
             >
-              📞 07 86 35 61 39
+              <Phone className="w-5 h-5" />
+              <span>07 86 35 61 39</span>
             </a>
             <Link
               to="/"
               className="bg-red-700 text-white px-8 py-4 rounded-full font-bold hover:bg-red-800 transition-colors"
             >
-              Voir tous nos services
+              {type === 'ouverture-porte' ? 'J\'ai besoin d\'une ouverture immédiate' : 
+               type === 'serrure-bloquee' ? 'J\'ai besoin d\'un dépannage immédiat' :
+               type === 'perte-cles' ? 'Besoin d\'une ouverture immédiate' :
+               'Sécuriser mon logement maintenant'}
             </Link>
           </div>
         </div>
