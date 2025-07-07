@@ -8,31 +8,32 @@ import Footer from "../components/Footer";
 const ServicePage = ({ type }) => {
   const services = {
     "ouverture-porte": {
-      title: "Ouverture de Porte Claquée",
-      subtitle: "Urgence 24h/24 dans le Var",
-      description: "Intervention en urgence ouverture porte claquée dans le Var 83 en moins de 30 min. Pas de dégât, devis gratuit, agréé assurances.",
+      title: "Ouverture de Porte Claquée dans le Var (83)",
+      subtitle: "Intervention Urgence 24h/24",
+      description: "Vous êtes bloqué dehors, porte claquée ? Serrure Minute intervient partout dans le Var en moins de 30 minutes, 24h/24 et 7j/7. Ouverture sans dégât, devis gratuit.",
       icon: DoorOpen,
       image: "https://images.pexels.com/photos/830899/pexels-photo-830899.jpeg",
       color: "from-blue-500 to-blue-600",
       metaTitle: "Ouverture Porte Claquée Var (83) – Serrurier 24/24",
       canonical: "https://serrure-minute-var.com/urgences/ouverture-porte-claquee",
       testimonial: {
-        name: "Sophie M.",
+        name: "Sophie",
         city: "Fréjus",
-        text: "Intervention très rapide après que ma porte se soit claquée. L'artisan est arrivé en 20 minutes et a ouvert ma porte sans aucun dégât."
+        text: "Porte claquée à Fréjus dimanche soir, ils sont venus en 25 min, porte ouverte sans rien casser. Parfait."
       },
       content: {
-        intro: "Votre porte s'est claquée et vous vous retrouvez bloqué dehors ? Ne paniquez pas ! Serrure Minute intervient 24h/24 et 7j/7 dans tout le département du Var pour résoudre ce problème fréquent mais stressant. Nos serruriers experts utilisent des techniques professionnelles pour ouvrir votre porte sans dégât dans 95% des cas.",
+        intro: "Vous êtes bloqué dehors, porte claquée derrière vous ? Pas de panique. Serrure Minute intervient partout dans le Var en moins de 30 minutes, 24h/24 et 7j/7, même les jours fériés. Nos artisans serruriers expérimentés ouvrent votre porte sans dégât et au meilleur prix, devis gratuit avant chaque intervention.",
         causes: [
-          "Vent violent qui claque la porte",
-          "Clés oubliées à l'intérieur",
-          "Serrure défaillante qui se bloque",
-          "Porte qui se ferme automatiquement",
-          "Problème de poignée ou de mécanisme"
+          "Courant d'air qui claque la porte",
+          "Clé oubliée à l'intérieur",
+          "Enfant qui ferme la porte",
+          "Serrure qui se bloque spontanément",
+          "Mécanisme défaillant"
         ],
-        process: "Notre méthode d'intervention respecte votre propriété. Nos artisans arrivent équipés d'outils professionnels spécialisés dans l'ouverture fine. Nous commençons toujours par les techniques les moins invasives : manipulation de la serrure, utilisation de radio ou d'outils de crochetage professionnel. Le perçage n'est utilisé qu'en dernier recours et uniquement avec votre accord.",
-        price: "Le tarif pour l'ouverture d'une porte claquée varie selon la complexité et l'heure d'intervention. Nous pratiquons des prix transparents conformes aux tarifs officiels de la profession. Un devis gratuit vous est systématiquement remis avant toute intervention. Nos prestations sont souvent remboursées par votre assurance habitation.",
-        emergency: "En cas d'urgence absolue (enfant seul à l'intérieur, personne âgée, problème médical), nous priorisons votre intervention et nous nous engageons à arriver en moins de 20 minutes dans un rayon de 30km autour de Fréjus."
+        process: "Notre méthode d'ouverture sans dommage : techniques d'ouverture fines (radio, crochetage), aucun perçage inutile, respect total de votre cylindre, travail propre et garanti. Nos serruriers sont équipés d'outils professionnels et interviennent rapidement dans tout le Var, y compris Toulon, Fréjus, Draguignan, Hyères, La Seyne et tous les villages alentours.",
+        price: "À partir de 90€, devis gratuit avant intervention. Intervention sans casse, garantie 1 an, remboursable par votre assurance habitation, agréé assurances et carte bleue.",
+        emergency: "30 minutes maximum sur place. Disponibles 24/7, jours fériés, nuits, dimanches compris. Devis annoncé avant toute opération.",
+        zones: "Var Est : Fréjus, Saint-Raphaël, Puget. Var Ouest : Toulon, Hyères, La Seyne. Haut-Var : Draguignan, Brignoles."
       }
     },
     "serrure-bloquee": {
