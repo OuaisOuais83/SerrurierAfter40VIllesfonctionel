@@ -463,6 +463,143 @@ const LocalPage = ({ city }) => {
         </div>
       </section>
 
+      {/* Section maillage interne vers pages urgences */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Nos interventions en urgence dans {cityData.name}
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="group"
+              >
+                <Link to="/urgences/ouverture-porte-claquee" className="block">
+                  <div className="bg-gradient-to-r from-red-50 to-red-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group-hover:from-red-100 group-hover:to-red-200">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
+                        <DoorOpen className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-red-700 transition-colors">
+                          Ouverture de porte claquée
+                        </h3>
+                        <p className="text-gray-600 text-sm">
+                          Intervention rapide 24h/24 à {cityData.name} pour porte claquée sans clé
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="group"
+              >
+                <Link to="/urgences/perte-cles" className="block">
+                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group-hover:from-blue-100 group-hover:to-blue-200">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                        <Key className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-700 transition-colors">
+                          Perte ou vol de clé
+                        </h3>
+                        <p className="text-gray-600 text-sm">
+                          Remplacement de cylindre et nouvelles clés à {cityData.name}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="group"
+              >
+                <Link to="/urgences/apres-cambriolage" className="block">
+                  <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group-hover:from-orange-100 group-hover:to-orange-200">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                        <Shield className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-orange-700 transition-colors">
+                          Sécurisation après effraction
+                        </h3>
+                        <p className="text-gray-600 text-sm">
+                          Remise en sécurité immédiate après cambriolage à {cityData.name}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="group"
+              >
+                <Link to="/urgences/serrure-bloquee-clef-cassee" className="block">
+                  <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group-hover:from-purple-100 group-hover:to-purple-200">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
+                        <Lock className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-purple-700 transition-colors">
+                          Serrure bloquée
+                        </h3>
+                        <p className="text-gray-600 text-sm">
+                          Déblocage et réparation de serrure grippée à {cityData.name}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Pourquoi choisir Serrure Minute à {cityData.name} ?
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Notre équipe de serruriers professionnels intervient dans tous les quartiers de {cityData.name} avec un seul objectif : résoudre votre problème de serrurerie rapidement et efficacement. Que vous soyez confronté à une porte claquée, une serrure qui refuse de s'ouvrir, une clé cassée dans la serrure ou un cambriolage, nous avons la solution adaptée. Notre expérience de plus de 10 ans dans le Var nous permet de maîtriser toutes les situations d'urgence et de vous proposer un service de qualité, 24h/24 et 7j/7.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:+33786356139"
+                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span>Urgence {cityData.name}</span>
+                </a>
+                <Link
+                  to="/"
+                  className="bg-white border border-blue-200 text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors"
+                >
+                  Tous nos services
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call-to-Action final */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
