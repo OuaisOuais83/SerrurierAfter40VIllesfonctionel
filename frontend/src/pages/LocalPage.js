@@ -2,80 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { MapPin, Clock, Phone, Star, DoorOpen, Lock, Key, Shield } from "lucide-react";
+import { MapPin, Clock, Phone, Star, DoorOpen, Lock, Key, Shield, CheckCircle } from "lucide-react";
 import Footer from "../components/Footer";
+import { citiesData, introVariations, faqVariations } from "../data/citiesData";
 
 const LocalPage = ({ city }) => {
-  const cities = {
-    "toulon": {
-      name: "Toulon",
-      title: "Serrurier à Toulon",
-      subtitle: "Urgence 24h/24",
-      description: "Serrure Minute Toulon : urgence ouverture porte, changement serrure, 24h/24, 30min, agréé assurances, devis gratuit.",
-      metaTitle: "Serrurier Toulon (83) – Urgence 24h/24 – 30 min",
-      canonical: "https://serrure-minute-var.com/zones/serrurier-toulon",
-      districts: ["Le Mourillon", "Pont du Las", "La Serinette", "Centre-ville", "Sainte-Musse", "La Rode"],
-      testimonial: {
-        name: "Mathieu L.",
-        text: "Suite à un cambriolage, j'ai appelé Serrure Minute. Ils sont venus immédiatement sécuriser ma porte et changer la serrure. Travail impeccable et prise en charge assurance."
-      }
-    },
-    "frejus": {
-      name: "Fréjus",
-      title: "Serrurier à Fréjus",
-      subtitle: "Intervention en 30min",
-      description: "Serrurier Minute Fréjus : dépannage serrurerie, ouverture de porte, changement de serrure, 30min, devis gratuit, 24h/24.",
-      metaTitle: "Serrurier Fréjus (83) – Dépannage Urgence 24/24",
-      canonical: "https://serrure-minute-var.com/zones/serrurier-frejus",
-      districts: ["Centre-ville", "Plage", "Caïs", "Villeneuve", "Saint-Aygulf", "Fréjus-Plage"],
-      testimonial: {
-        name: "Sophie M.",
-        text: "Intervention très rapide après que ma porte se soit claquée. L'artisan est arrivé en 20 minutes et a ouvert ma porte sans aucun dégât. Service professionnel et prix correct."
-      }
-    },
-    "draguignan": {
-      name: "Draguignan",
-      title: "Serrurier à Draguignan",
-      subtitle: "Urgence 24h/24",
-      description: "Serrurier Minute Draguignan : ouverture de porte, serrure cassée, sécurisation, devis gratuit, 24h/24, 30 min.",
-      metaTitle: "Serrurier Draguignan (83) – Dépannage Urgence 24/7",
-      canonical: "https://serrure-minute-var.com/zones/serrurier-draguignan",
-      districts: ["Centre historique", "Malmont", "Sainte-Roseline", "Nartuby", "Riou-Blanc", "Figanières"],
-      testimonial: {
-        name: "Isabelle R.",
-        text: "J'ai perdu mes clés un dimanche soir. Malgré l'heure tardive, un serrurier est venu m'ouvrir ma porte. Service de qualité, je recommande vivement !"
-      }
-    },
-    "hyeres": {
-      name: "Hyères",
-      title: "Serrurier à Hyères",
-      subtitle: "Intervention Urgence 24/7",
-      description: "Serrurier Minute Hyères : ouverture de porte, urgence serrure, devis gratuit, 30 min, 24/7, agréé assurances.",
-      metaTitle: "Serrurier Hyères (83) – Urgence Dépannage 24/24",
-      canonical: "https://serrure-minute-var.com/zones/serrurier-hyeres",
-      districts: ["Centre-ville", "Giens", "Porquerolles", "Ayguade", "Almanarre", "La Capte"],
-      testimonial: {
-        name: "Benoît L.",
-        text: "Serrure complètement bloquée un dimanche. L'équipe est venue rapidement et a réparé sans changer toute la serrure. Parfait !"
-      }
-    },
-    "la-seyne": {
-      name: "La Seyne-sur-Mer",
-      title: "Serrurier à La Seyne",
-      subtitle: "Intervention Urgence 24/7",
-      description: "Serrurier Minute La Seyne : ouverture porte claquée, sécurisation après cambriolage, 24/24, 30 min, devis gratuit.",
-      metaTitle: "Serrurier La Seyne (83) – Dépannage Urgence 24h/24",
-      canonical: "https://serrure-minute-var.com/zones/serrurier-la-seyne",
-      districts: ["Centre-ville", "Janas", "Berthe", "Sablettes", "Tamaris", "Mar Vivo"],
-      testimonial: {
-        name: "Karim M.",
-        text: "Après un cambriolage, ils ont sécurisé ma porte immédiatement. Travail professionnel et prise en charge par l'assurance. Merci !"
-      }
-    }
+  const cityData = citiesData[city];
+  if (!cityData) return <div className="min-h-screen pt-20 flex items-center justify-center"><h1>Ville non trouvée</h1></div>;
+
+  // Obtenir l'introduction personnalisée
+  const getIntroText = () => {
+    const variation = introVariations[cityData.introVariation] || introVariations[1];
+    return variation.replace(/\[CITY\]/g, cityData.name);
   };
 
-  const cityData = cities[city];
-  if (!cityData) return <div>Ville non trouvée</div>;
+  // Obtenir les FAQ personnalisées
+  const getFAQs = () => {
+    const faqSet = faqVariations[cityData.introVariation] || faqVariations[1];
+    return faqSet.map(faq => ({
+      question: faq.question.replace(/\[CITY\]/g, cityData.name),
+      answer: faq.answer.replace(/\[CITY\]/g, cityData.name)
+    }));
+  };
 
   const services = [
     {
@@ -104,6 +52,8 @@ const LocalPage = ({ city }) => {
     }
   ];
 
+  const faqs = getFAQs();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -114,6 +64,34 @@ const LocalPage = ({ city }) => {
         <title>{cityData.metaTitle}</title>
         <meta name="description" content={cityData.description} />
         <link rel="canonical" href={cityData.canonical} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": `Serrure Minute - ${cityData.name}`,
+            "description": cityData.description,
+            "url": cityData.canonical,
+            "telephone": "+33786356139",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": cityData.name,
+              "addressRegion": "Var",
+              "postalCode": "83",
+              "addressCountry": "FR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "43.1",
+              "longitude": "6.1"
+            },
+            "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -155,12 +133,55 @@ const LocalPage = ({ city }) => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Introduction personnalisée */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Serrurier professionnel à {cityData.name}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {getIntroText()}
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-center space-x-3 bg-green-50 p-4 rounded-xl">
+                  <CheckCircle className="w-8 h-8 text-green-600" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Intervention 30min</p>
+                    <p className="text-gray-600 text-sm">Délai garanti à {cityData.name}</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 bg-blue-50 p-4 rounded-xl">
+                  <CheckCircle className="w-8 h-8 text-blue-600" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Agréé assurances</p>
+                    <p className="text-gray-600 text-sm">Remboursement facilité</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 bg-purple-50 p-4 rounded-xl">
+                  <CheckCircle className="w-8 h-8 text-purple-600" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Garantie 1 an</p>
+                    <p className="text-gray-600 text-sm">Sur toutes prestations</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Nos services à {cityData.name}
+              Nos services de serrurerie à {cityData.name}
             </h2>
             <p className="text-xl text-gray-600">
               Intervention rapide dans tous les quartiers de {cityData.name}
@@ -196,7 +217,7 @@ const LocalPage = ({ city }) => {
       </section>
 
       {/* Zones Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
@@ -205,32 +226,46 @@ const LocalPage = ({ city }) => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Quartiers desservis</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Quartiers et districts desservis</h3>
+                <div className="grid grid-cols-1 gap-3">
                   {cityData.districts.map((district, index) => (
-                    <div key={index} className="flex items-center space-x-2">
+                    <div key={index} className="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg">
                       <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                      <span className="text-gray-700">{district}</span>
+                      <span className="text-gray-700 font-medium">{district}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Délai d'intervention</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Clock className="w-6 h-6 text-green-500" />
-                    <div>
-                      <p className="font-semibold text-gray-900">15-25 minutes</p>
-                      <p className="text-sm text-gray-600">Délai moyen à {cityData.name}</p>
-                    </div>
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Points d'intérêt</h3>
+                  <div className="space-y-2">
+                    {cityData.landmarks.map((landmark, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <MapPin className="w-4 h-4 text-blue-500" />
+                        <span className="text-gray-700">{landmark}</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-6 h-6 text-blue-500" />
-                    <div>
-                      <p className="font-semibold text-gray-900">24h/24 - 7j/7</p>
-                      <p className="text-sm text-gray-600">Disponibilité permanente</p>
+                </div>
+                
+                <div className="bg-green-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Délai d'intervention</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <Clock className="w-6 h-6 text-green-500" />
+                      <div>
+                        <p className="font-semibold text-gray-900">15-30 minutes</p>
+                        <p className="text-sm text-gray-600">Délai moyen à {cityData.name}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Phone className="w-6 h-6 text-blue-500" />
+                      <div>
+                        <p className="font-semibold text-gray-900">24h/24 - 7j/7</p>
+                        <p className="text-sm text-gray-600">Disponibilité permanente</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -240,11 +275,30 @@ const LocalPage = ({ city }) => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Questions fréquentes à {cityData.name}
+            </h2>
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl shadow-md">
+                  <h3 className="font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Avis client</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">Témoignage client à {cityData.name}</h2>
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
               <div className="flex items-center justify-center mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -260,7 +314,7 @@ const LocalPage = ({ city }) => {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">{cityData.testimonial.name}</p>
-                  <p className="text-gray-600">{cityData.name}</p>
+                  <p className="text-gray-600">{cityData.testimonial.district}, {cityData.name}</p>
                 </div>
               </div>
             </div>
@@ -280,9 +334,10 @@ const LocalPage = ({ city }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+33786356139"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-colors"
+              className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-colors flex items-center justify-center space-x-2"
             >
-              📞 Appeler maintenant
+              <Phone className="w-5 h-5" />
+              <span>Appeler maintenant</span>
             </a>
             <Link
               to="/"
