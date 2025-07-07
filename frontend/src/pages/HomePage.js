@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
 import WhyChooseUs from "../components/WhyChooseUs";
 import ServicesSection from "../components/ServicesSection";
+import CertificationLogos from "../components/CertificationLogos";
 import ZonesSection from "../components/ZonesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
@@ -32,6 +33,7 @@ const HomePage = () => {
       </Helmet>
 
       <HeroSection />
+      <CertificationLogos />
       <WhyChooseUs />
       <ServicesSection />
       <ZonesSection />
