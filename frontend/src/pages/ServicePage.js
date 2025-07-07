@@ -331,7 +331,7 @@ const ServicePage = ({ type }) => {
                 transition={{ duration: 0.8 }}
               >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Nos techniques d'ouverture sans dégât
+                  {type === 'ouverture-porte' ? 'Nos techniques d\'ouverture sans dégât' : 'Notre méthode d\'intervention'}
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {service.content.process}
