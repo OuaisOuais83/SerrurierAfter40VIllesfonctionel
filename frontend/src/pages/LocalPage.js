@@ -59,8 +59,8 @@ const LocalPage = ({ city }) => {
       className="min-h-screen pt-20"
     >
       <Helmet>
-        <title>Serrurier {cityData.name} 24h/24 – Ouverture porte 30 min – Serrure Minute</title>
-        <meta name="description" content={`Urgence serrurier à ${cityData.name} ? Ouverture de porte claquée ou serrure bloquée en 30 minutes, 24h/24. Agréé assurance, devis gratuit. Serrure Minute.`} />
+        <title>Serrurier {cityData.name} 24h/24 – Urgences, ouverture porte claquée, dépannage rapide</title>
+        <meta name="description" content={`Urgence serrurier à ${cityData.name} ? Ouverture porte claquée, serrure bloquée, intervention en 30 min. 24h/24. Devis gratuit, remboursé assurance.`} />
         <link rel="canonical" href={cityData.canonical} />
         <script type="application/ld+json">
           {JSON.stringify({
