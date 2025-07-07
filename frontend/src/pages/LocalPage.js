@@ -227,7 +227,7 @@ const LocalPage = ({ city }) => {
                   ))}
                 </div>
                 <p className="text-gray-700 text-sm">
-                  Disponible 24h/24, 7j/7, y compris dimanche et jours fériés.
+                  Disponible 24h/24, 7j/7, y compris dimanche et jours fériés. Notre central d'appel gère les urgences en temps réel et oriente immédiatement le technicien le plus proche de votre localisation à {cityData.name}.
                 </p>
               </div>
             </div>
