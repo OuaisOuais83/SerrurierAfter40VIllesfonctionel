@@ -342,28 +342,98 @@ const ServicePage = ({ type }) => {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Questions fréquentes</h2>
+            <div className="space-y-6">
+              {type === 'ouverture-porte' && (
+                <>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Combien coûte une ouverture de porte claquée ?</h3>
+                    <p className="text-gray-700">À partir de 90€, devis gratuit avant intervention.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Intervenez-vous la nuit ?</h3>
+                    <p className="text-gray-700">Oui, 24h/24, 7j/7, jours fériés inclus.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Est-ce que vous percez la serrure ?</h3>
+                    <p className="text-gray-700">Jamais si la porte n'est pas verrouillée, nous l'ouvrons proprement.</p>
+                  </div>
+                </>
+              )}
+              {type === 'serrure-bloquee' && (
+                <>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Combien coûte le déblocage d'une serrure ?</h3>
+                    <p className="text-gray-700">À partir de 100€, devis gratuit avant intervention.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Est-ce garanti ?</h3>
+                    <p className="text-gray-700">Oui, 1 an minimum sur nos interventions.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Intervenez-vous la nuit ?</h3>
+                    <p className="text-gray-700">Oui, sans majoration cachée, devis transparent.</p>
+                  </div>
+                </>
+              )}
+              {type === 'perte-cles' && (
+                <>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Est-ce que je suis remboursé ?</h3>
+                    <p className="text-gray-700">Souvent oui, par votre assurance habitation ou carte bleue (selon conditions).</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Est-ce que la serrure est remplacée ?</h3>
+                    <p className="text-gray-700">Si vous le souhaitez, pour la sécurité, nous le faisons sur place.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Combien de temps pour l'intervention ?</h3>
+                    <p className="text-gray-700">Moins de 30 min généralement.</p>
+                  </div>
+                </>
+              )}
+              {type === 'apres-cambriolage' && (
+                <>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Est-ce pris en charge par l'assurance ?</h3>
+                    <p className="text-gray-700">Oui dans la majorité des contrats.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Pouvez-vous installer un blindage temporaire ?</h3>
+                    <p className="text-gray-700">Oui, sur place en moins d'une heure.</p>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-3">Intervenez-vous la nuit ?</h3>
+                    <p className="text-gray-700">Oui, 24/7, sans surcoût caché.</p>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Zones d'intervention */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Témoignage client</h2>
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-                ))}
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Zones d'intervention</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <h3 className="font-semibold text-gray-900 mb-3">Var Est</h3>
+                <p className="text-gray-700">Fréjus, Saint-Raphaël, Puget-sur-Argens, Roquebrune-sur-Argens</p>
               </div>
-              <p className="text-lg text-gray-700 italic mb-6">
-                "{service.testimonial.text}"
-              </p>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                  {service.testimonial.name.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">{service.testimonial.name}</p>
-                  <p className="text-gray-600">{service.testimonial.city}</p>
-                </div>
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <h3 className="font-semibold text-gray-900 mb-3">Var Ouest</h3>
+                <p className="text-gray-700">Toulon, Hyères, La Seyne-sur-Mer, Six-Fours-les-Plages</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <h3 className="font-semibold text-gray-900 mb-3">Haut-Var</h3>
+                <p className="text-gray-700">Draguignan, Brignoles, Lorgues, Flayosc</p>
               </div>
             </div>
           </div>
