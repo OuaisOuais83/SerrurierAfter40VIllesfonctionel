@@ -183,10 +183,20 @@ const LocalPage = ({ city }) => {
               Nous travaillons avec tous types de serrures (multipoints, blindées, standard) et assurons une intervention dans les règles, sans surfacturation, avec garantie d'un an sur la prestation. Nos techniciens sont formés aux dernières technologies de serrurerie et disposent d'un stock complet de pièces détachées pour intervenir efficacement sur place.
             </p>
             
-            <div className="bg-blue-50 rounded-xl p-6">
+            <div className="bg-blue-50 rounded-xl p-6 mb-8">
               <h3 className="font-semibold text-gray-900 mb-3">Expertise technique à {cityData.name}</h3>
+              <p className="text-gray-700 mb-4">
+                Spécialisés dans tous types de serrures : cylindre européen, serrure multipoints A2P, serrure connectée, serrure biométrique, blindage de porte. Intervention sur toutes marques : Fichet, Picard, Vachette, Bricard, Mottura, Pollux, Reelax, JPM.
+              </p>
               <p className="text-gray-700">
-                Spécialisés dans tous types de serrures : cylindre européen, serrure multipoints A2P, serrure connectée, serrure biométrique, blindage de porte. Intervention sur toutes marques : Fichet, Picard, Vachette, Bricard, Mottura.
+                Nos techniciens maîtrisent les techniques d'ouverture les plus récentes : manipulation douce, bumping contrôlé, impressioning, pick gun électronique. Chaque intervention est réalisée avec des outils professionnels de dernière génération pour garantir une ouverture sans dégât dans 95% des cas.
+              </p>
+            </div>
+            
+            <div className="bg-green-50 rounded-xl p-6">
+              <h3 className="font-semibold text-gray-900 mb-3">Stock permanent à {cityData.name}</h3>
+              <p className="text-gray-700">
+                Nos véhicules d'intervention transportent en permanence plus de 200 références de cylindres, serrures et accessoires de sécurité. Cette organisation nous permet de résoudre 90% des pannes sur place, sans avoir à revenir le lendemain. Cylindres de sécurité, serrures multipoints, verrous haute sûreté, cornières anti-pinces : tout notre matériel respecte les normes A2P et est couvert par notre garantie d'un an.
               </p>
             </div>
           </div>
