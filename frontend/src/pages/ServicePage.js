@@ -242,12 +242,22 @@ const ServicePage = ({ type }) => {
               <p className="text-gray-700 leading-relaxed text-lg mb-8">
                 {service.content.intro}
               </p>
+              {/* CTA Button intégré */}
+              <div className="my-8 text-center">
+                <a
+                  href="tel:+33786356139"
+                  className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full font-bold text-lg space-x-3 transition-all duration-300 shadow-lg"
+                >
+                  <Phone className="w-6 h-6" />
+                  <span>Appeler maintenant</span>
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Causes communes */}
+      {/* Pourquoi porte claquée */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -256,9 +266,12 @@ const ServicePage = ({ type }) => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                Causes fréquentes
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                Pourquoi une porte se claque-t-elle ?
               </h2>
+              <p className="text-gray-700 leading-relaxed text-lg mb-8">
+                {service.content.causesText}
+              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {service.content.causes.map((cause, index) => (
                   <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md">
@@ -274,7 +287,7 @@ const ServicePage = ({ type }) => {
         </div>
       </section>
 
-      {/* Méthode d'intervention */}
+      {/* Techniques d'ouverture */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -285,7 +298,7 @@ const ServicePage = ({ type }) => {
                 transition={{ duration: 0.8 }}
               >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Notre méthode d'intervention
+                  Nos techniques d'ouverture sans dégât
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {service.content.process}
@@ -296,8 +309,8 @@ const ServicePage = ({ type }) => {
                       <CheckCircle className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">Intervention soignée</h3>
-                      <p className="text-gray-600">Respect total de votre propriété avec techniques non destructives</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Outils professionnels</h3>
+                      <p className="text-gray-600">Radio, by-pass, crochet professionnel</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -305,8 +318,8 @@ const ServicePage = ({ type }) => {
                       <Award className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">Outils professionnels</h3>
-                      <p className="text-gray-600">Équipement de pointe pour tous types de serrures</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Ouverture sans casse</h3>
+                      <p className="text-gray-600">Respect de l'intégrité de votre installation</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -315,7 +328,7 @@ const ServicePage = ({ type }) => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Garantie 1 an</h3>
-                      <p className="text-gray-600">Tous nos travaux sont garantis pour votre tranquillité</p>
+                      <p className="text-gray-600">Remise en service immédiate garantie</p>
                     </div>
                   </div>
                 </div>
@@ -343,7 +356,32 @@ const ServicePage = ({ type }) => {
         </div>
       </section>
 
-      {/* Tarifs et urgence */}
+      {/* Zones d'intervention */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Zones d'intervention en urgence dans le Var
+            </h2>
+            <p className="text-gray-700 text-center mb-8">
+              {service.content.emergency}
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {service.content.zones.map((zone, index) => (
+                <div key={index} className="bg-white p-4 rounded-xl shadow-md text-center">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <p className="font-semibold text-gray-900">{zone}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-gray-600 mt-6">et tous les villages alentours.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tarifs et assurances */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -355,7 +393,7 @@ const ServicePage = ({ type }) => {
               >
                 <div className="flex items-center space-x-3 mb-6">
                   <Euro className="w-8 h-8" />
-                  <h3 className="text-2xl font-bold">Tarifs transparents</h3>
+                  <h2 className="text-2xl font-bold">Tarifs et assurances</h2>
                 </div>
                 <p className="text-blue-100 leading-relaxed">
                   {service.content.price}
@@ -367,14 +405,65 @@ const ServicePage = ({ type }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <div className="flex items-center space-x-3 mb-6">
-                  <Clock className="w-8 h-8" />
-                  <h3 className="text-2xl font-bold">Urgence 24h/24</h3>
+                <h3 className="text-xl font-bold mb-6">Nos engagements</h3>
+                <div className="space-y-3">
+                  {service.content.engagements.map((engagement, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-400" />
+                      <span className="text-blue-100">{engagement}</span>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-blue-100 leading-relaxed">
-                  {service.content.emergency}
-                </p>
               </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">FAQ ouverture de porte claquée</h2>
+            <div className="space-y-6">
+              {service.content.faqs.map((faq, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-xl">
+                  <h3 className="font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Avis clients */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Avis clients</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {service.testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
+                  <div className="flex items-center justify-center mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 italic mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-gray-600 text-sm">{testimonial.city}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
