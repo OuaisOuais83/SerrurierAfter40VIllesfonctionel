@@ -263,9 +263,15 @@ const Header = () => {
               
               <div className="space-y-3">
                 <p className="font-bold text-gray-900 text-lg">Zones Var (83)</p>
-                <div className="pl-4 space-y-2">
+                <div className="pl-4 space-y-1 max-h-40 overflow-y-auto">
                   <Link to="/zones/serrurier-toulon" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
                     📍 Toulon
+                  </Link>
+                  <Link to="/zones/serrurier-la-seyne-sur-mer" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 La Seyne-sur-Mer
+                  </Link>
+                  <Link to="/zones/serrurier-hyeres" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Hyères
                   </Link>
                   <Link to="/zones/serrurier-frejus" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
                     📍 Fréjus
@@ -273,12 +279,22 @@ const Header = () => {
                   <Link to="/zones/serrurier-draguignan" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
                     📍 Draguignan
                   </Link>
-                  <Link to="/zones/serrurier-hyeres" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
-                    📍 Hyères
+                  <Link to="/zones/serrurier-saint-raphael" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Saint-Raphaël
                   </Link>
-                  <Link to="/zones/serrurier-la-seyne" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
-                    📍 La Seyne
+                  <Link to="/zones/serrurier-brignoles" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Brignoles
                   </Link>
+                  <Link to="/zones/serrurier-six-fours-les-plages" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Six-Fours-les-Plages
+                  </Link>
+                  <Link to="/zones/serrurier-saint-tropez" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Saint-Tropez
+                  </Link>
+                  <Link to="/zones/serrurier-sainte-maxime" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    📍 Sainte-Maxime
+                  </Link>
+                  <p className="text-xs text-gray-500 pt-2">+ 30 autres villes...</p>
                 </div>
               </div>
 
