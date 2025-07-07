@@ -236,9 +236,18 @@ const LocalPage = ({ city }) => {
                     </div>
                   ))}
                 </div>
-                <p className="text-gray-700 text-sm">
+                <p className="text-gray-700 text-sm mb-4">
                   Disponible 24h/24, 7j/7, y compris dimanche et jours fériés. Notre central d'appel gère les urgences en temps réel et oriente immédiatement le technicien le plus proche de votre localisation à {cityData.name}.
                 </p>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-900 mb-2">Secteurs prioritaires :</h4>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Centre-ville et zones piétonnes</li>
+                    <li>• Quartiers résidentiels et pavillonnaires</li>
+                    <li>• Zones d'activités et commerciales</li>
+                    <li>• Résidences seniors et établissements</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
