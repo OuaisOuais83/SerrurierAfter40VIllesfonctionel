@@ -438,15 +438,26 @@ const ServicePage = ({ type }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <h3 className="text-xl font-bold mb-6">Nos engagements</h3>
-                <div className="space-y-3">
-                  {service.content.engagements.map((engagement, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-400" />
-                      <span className="text-blue-100">{engagement}</span>
-                    </div>
-                  ))}
+                <div className="flex items-center space-x-3 mb-6">
+                  <Clock className="w-8 h-8" />
+                  <h3 className="text-2xl font-bold">
+                    {type === 'ouverture-porte' ? 'Nos engagements' : 'Urgence 24h/24'}
+                  </h3>
                 </div>
+                {type === 'ouverture-porte' && service.content.engagements ? (
+                  <div className="space-y-3">
+                    {service.content.engagements.map((engagement, index) => (
+                      <div key={index} className="flex items-center space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-400" />
+                        <span className="text-blue-100">{engagement}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-blue-100 leading-relaxed">
+                    {service.content.emergency}
+                  </p>
+                )}
               </motion.div>
             </div>
           </div>
