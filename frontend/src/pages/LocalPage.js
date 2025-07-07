@@ -59,8 +59,8 @@ const LocalPage = ({ city }) => {
       className="min-h-screen pt-20"
     >
       <Helmet>
-        <title>{cityData.metaTitle}</title>
-        <meta name="description" content={cityData.description} />
+        <title>Serrurier {cityData.name} 24h/24 – Ouverture porte 30 min – Serrure Minute</title>
+        <meta name="description" content={`Urgence serrurier à ${cityData.name} ? Ouverture de porte claquée ou serrure bloquée en 30 minutes, 24h/24. Agréé assurance, devis gratuit. Serrure Minute.`} />
         <link rel="canonical" href={cityData.canonical} />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -70,12 +70,12 @@ const LocalPage = ({ city }) => {
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "135 Avenue Victor Hugo",
-              "addressLocality": cityData.name,
-              "postalCode": cityData.postalCode,
+              "addressLocality": "Fréjus",
+              "postalCode": "83600",
               "addressCountry": "FR"
             },
             "telephone": "+33786356139",
-            "areaServed": "Var",
+            "areaServed": cityData.name,
             "openingHours": "24/7",
             "aggregateRating": {
               "@type": "AggregateRating",
