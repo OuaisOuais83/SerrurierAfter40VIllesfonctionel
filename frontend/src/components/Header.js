@@ -71,23 +71,132 @@ const Header = () => {
               <span className="text-gray-800 hover:text-blue-600 transition-colors cursor-pointer font-medium">
                 Zones Var
               </span>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="p-4 space-y-1">
-                  <Link to="/zones/serrurier-toulon" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
-                    📍 Serrurier Toulon
-                  </Link>
-                  <Link to="/zones/serrurier-frejus" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
-                    📍 Serrurier Fréjus
-                  </Link>
-                  <Link to="/zones/serrurier-draguignan" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
-                    📍 Serrurier Draguignan
-                  </Link>
-                  <Link to="/zones/serrurier-hyeres" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
-                    📍 Serrurier Hyères
-                  </Link>
-                  <Link to="/zones/serrurier-la-seyne" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
-                    📍 Serrurier La Seyne
-                  </Link>
+              <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto">
+                <div className="p-4">
+                  <p className="text-xs text-gray-500 mb-3 font-medium">40 villes du Var (83) • Intervention 30min</p>
+                  <div className="grid grid-cols-2 gap-1">
+                    {/* Villes principales */}
+                    <Link to="/zones/serrurier-toulon" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Toulon
+                    </Link>
+                    <Link to="/zones/serrurier-la-seyne-sur-mer" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Seyne-sur-Mer
+                    </Link>
+                    <Link to="/zones/serrurier-hyeres" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Hyères
+                    </Link>
+                    <Link to="/zones/serrurier-frejus" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Fréjus
+                    </Link>
+                    <Link to="/zones/serrurier-draguignan" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Draguignan
+                    </Link>
+                    <Link to="/zones/serrurier-saint-raphael" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Saint-Raphaël
+                    </Link>
+                    <Link to="/zones/serrurier-brignoles" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Brignoles
+                    </Link>
+                    <Link to="/zones/serrurier-six-fours-les-plages" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Six-Fours-les-Plages
+                    </Link>
+                    <Link to="/zones/serrurier-la-garde" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Garde
+                    </Link>
+                    <Link to="/zones/serrurier-la-valette-du-var" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Valette-du-Var
+                    </Link>
+                    <Link to="/zones/serrurier-saint-maximin-la-sainte-baume" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Saint-Maximin
+                    </Link>
+                    <Link to="/zones/serrurier-sanary-sur-mer" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Sanary-sur-Mer
+                    </Link>
+                    <Link to="/zones/serrurier-sainte-maxime" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Sainte-Maxime
+                    </Link>
+                    <Link to="/zones/serrurier-roquebrune-sur-argens" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Roquebrune-sur-Argens
+                    </Link>
+                    <Link to="/zones/serrurier-ollioules" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Ollioules
+                    </Link>
+                    <Link to="/zones/serrurier-cogolin" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Cogolin
+                    </Link>
+                    <Link to="/zones/serrurier-saint-cyr-sur-mer" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Saint-Cyr-sur-Mer
+                    </Link>
+                    <Link to="/zones/serrurier-le-pradet" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Le Pradet
+                    </Link>
+                    <Link to="/zones/serrurier-la-crau" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Crau
+                    </Link>
+                    <Link to="/zones/serrurier-cuers" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Cuers
+                    </Link>
+                    <Link to="/zones/serrurier-vidauban" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Vidauban
+                    </Link>
+                    <Link to="/zones/serrurier-sollies-pont" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Solliès-Pont
+                    </Link>
+                    <Link to="/zones/serrurier-bormes-les-mimosas" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Bormes-les-Mimosas
+                    </Link>
+                    <Link to="/zones/serrurier-bandol" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Bandol
+                    </Link>
+                    <Link to="/zones/serrurier-le-beausset" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Le Beausset
+                    </Link>
+                    <Link to="/zones/serrurier-carqueiranne" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Carqueiranne
+                    </Link>
+                    <Link to="/zones/serrurier-fayence" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Fayence
+                    </Link>
+                    <Link to="/zones/serrurier-la-londe-les-maures" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Londe-les-Maures
+                    </Link>
+                    <Link to="/zones/serrurier-le-muy" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Le Muy
+                    </Link>
+                    <Link to="/zones/serrurier-saint-tropez" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Saint-Tropez
+                    </Link>
+                    <Link to="/zones/serrurier-lorgues" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Lorgues
+                    </Link>
+                    <Link to="/zones/serrurier-pierrefeu-du-var" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Pierrefeu-du-Var
+                    </Link>
+                    <Link to="/zones/serrurier-le-luc" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Le Luc
+                    </Link>
+                    <Link to="/zones/serrurier-gareoult" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Garéoult
+                    </Link>
+                    <Link to="/zones/serrurier-grimaud" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Grimaud
+                    </Link>
+                    <Link to="/zones/serrurier-la-motte" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 La Motte
+                    </Link>
+                    <Link to="/zones/serrurier-puget-sur-argens" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Puget-sur-Argens
+                    </Link>
+                    <Link to="/zones/serrurier-carnoules" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Carnoules
+                    </Link>
+                    <Link to="/zones/serrurier-gonfaron" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Gonfaron
+                    </Link>
+                    <Link to="/zones/serrurier-cavalaire-sur-mer" className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">
+                      📍 Cavalaire-sur-Mer
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
