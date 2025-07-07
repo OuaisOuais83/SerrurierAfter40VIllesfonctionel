@@ -98,31 +98,32 @@ const ServicePage = ({ type }) => {
     },
     "apres-cambriolage": {
       title: "Sécurisation Après Cambriolage",
-      subtitle: "Intervention Var 24h/24",
-      description: "Après une effraction dans le Var ? Serrure Minute intervient 24/7 pour sécuriser portes et serrures, devis gratuit, agréé assurances.",
+      subtitle: "Intervention Var 24/24",
+      description: "Vous venez de subir un cambriolage ? Serrure Minute sécurise immédiatement votre porte et vos serrures dans tout le Var, 24h/24, 7j/7, y compris week-ends et jours fériés.",
       icon: Shield,
       image: "https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg",
       color: "from-red-500 to-red-600",
       metaTitle: "Sécurisation Après Cambriolage Var (83) – Serrurier 24/24",
       canonical: "https://serrure-minute-var.com/urgences/apres-cambriolage",
       testimonial: {
-        name: "Karim M.",
+        name: "Karim",
         city: "La Seyne",
-        text: "Après un cambriolage, ils ont sécurisé ma porte immédiatement. Travail professionnel et prise en charge par l'assurance."
+        text: "Cambriolage un samedi nuit, intervention en 25 min avec sécurisation de la porte, rassurant et efficace."
       },
       content: {
-        intro: "Être victime d'un cambriolage est un traumatisme qui nécessite une réaction immédiate pour sécuriser votre domicile. Serrure Minute comprend l'urgence de la situation et intervient dans l'heure pour remettre votre logement en sécurité. Nos équipes travaillent en coordination avec les forces de l'ordre et les experts d'assurance pour faciliter vos démarches.",
+        intro: "Vous venez de subir un cambriolage ? Serrure Minute sécurise immédiatement votre porte et vos serrures dans tout le Var, 24h/24, 7j/7, y compris week-ends et jours fériés.",
         causes: [
-          "Porte forcée avec serrure endommagée",
-          "Fenêtre brisée nécessitant une condamnation",
-          "Serrure crochetée ou percée par les cambrioleurs",
-          "Porte d'entrée arrachée ou déformée",
+          "Porte fracturée ou forcée",
+          "Serrure endommagée par effraction",
+          "Fenêtre brisée nécessitant condamnation",
           "Points de fermeture multiples endommagés",
+          "Cylindre crocheté ou percé",
           "Système de sécurité neutralisé"
         ],
-        process: "Notre intervention post-cambriolage suit un protocole strict : sécurisation immédiate des accès, évaluation des dommages, établissement d'un devis détaillé pour l'assurance, remplacement provisoire ou définitif des éléments endommagés. Nous photographions tous les dégâts pour faciliter votre dossier d'indemnisation. Nos factures sont directement acceptées par toutes les compagnies d'assurance.",
-        price: "Les travaux de sécurisation après cambriolage sont généralement pris en charge intégralement par votre assurance habitation. Nous avançons les frais et nous occupons de toute la facturation directe avec votre assureur. Vous n'avez aucun frais à débourser, sauf éventuelle franchise selon votre contrat.",
-        emergency: "Nous comprenons le stress post-cambriolage. C'est pourquoi nous proposons un accompagnement complet : conseil en sécurisation, mise en relation avec des vitriers partenaires, recommandations pour améliorer la sécurité future de votre domicile. Notre objectif est de vous redonner confiance dans votre sécurité."
+        process: "Nos solutions : blindage provisoire, changement de cylindre, remplacement de serrure, pose de barre de pivot, devis gratuit avant travaux, travail propre garanti. Une porte fracturée ou une serrure forcée vous expose à un nouveau vol dans les heures suivantes. Nous intervenons sous 30 minutes pour bloquer tout risque.",
+        price: "Oui dans la majorité des contrats. Agréé assurances, devis transmis à votre assureur, garantie 1 an sur le matériel, intervention facturable le jour-même.",
+        emergency: "Oui, 24/7, sans surcoût caché. Nous pouvons installer un blindage temporaire sur place en moins d'une heure.",
+        zones: "Toulon, Fréjus, Draguignan, Hyères, tous les villages du Var."
       }
     }
   };
