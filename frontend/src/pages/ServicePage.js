@@ -68,31 +68,32 @@ const ServicePage = ({ type }) => {
     },
     "perte-cles": {
       title: "Perte de Clés",
-      subtitle: "Dépannage Serrurier Var 24/7",
-      description: "Vous avez perdu vos clés dans le Var ? Serrure Minute intervient 24/24 pour ouvrir et sécuriser, devis gratuit, remboursement assurance.",
+      subtitle: "Serrurier Urgence Var 24/7",
+      description: "Vous avez perdu vos clés ? Pas de panique. Serrure Minute intervient dans tout le Var, 24h/24, 7j/7, même jours fériés, pour ouvrir votre porte et si besoin remplacer votre serrure sur place.",
       icon: Key,
       image: "https://images.pexels.com/photos/115642/pexels-photo-115642.jpeg",
       color: "from-green-500 to-green-600",
       metaTitle: "Perte de Clés Var (83) – Serrurier Dépannage 24/7",
       canonical: "https://serrure-minute-var.com/urgences/perte-cles",
       testimonial: {
-        name: "Isabelle R.",
+        name: "Isabelle",
         city: "Draguignan",
-        text: "J'ai perdu mes clés un dimanche soir. Malgré l'heure tardive, un serrurier est venu m'ouvrir ma porte. Service de qualité !"
+        text: "J'ai perdu mes clés un dimanche, technicien venu en 30 min, serrure remplacée sans surprise."
       },
       content: {
-        intro: "Perdre ses clés est l'une des situations les plus stressantes du quotidien. Que vous les ayez perdues en rentrant du travail, lors d'une sortie ou même chez vous, Serrure Minute propose une solution complète : ouverture immédiate, sécurisation temporaire et remplacement définitif. Notre service 24h/24 vous évite de passer la nuit dehors.",
+        intro: "Vous avez perdu vos clés ? Pas de panique. Serrure Minute intervient dans tout le Var, 24h/24, 7j/7, même jours fériés, pour ouvrir votre porte et si besoin remplacer votre serrure sur place.",
         causes: [
-          "Clés tombées pendant une promenade",
+          "Perte accidentelle des clés",
+          "Vol ou cambriolage de voiture",
           "Clés oubliées dans un lieu public",
-          "Clés volées lors d'un cambriolage de voiture",
           "Clés perdues lors d'un déménagement",
-          "Clés cassées qui ne permettent plus l'ouverture",
-          "Trousseau égaré avec toutes les clés"
+          "Trousseau égaré avec toutes les clés",
+          "Clés cassées qui ne fonctionnent plus"
         ],
-        process: "Après ouverture de votre porte, nous évaluons la situation sécuritaire. Si vos clés ont été volées ou perdues dans un lieu identifiable, nous recommandons fortement le changement immédiat de la serrure pour éviter toute intrusion malveillante. Si la perte semble accidentelle et sans risque, nous pouvons nous contenter de faire refaire des clés. Nous vous conseillons objectivement selon votre situation.",
-        price: "Le coût d'une intervention pour perte de clés comprend l'ouverture de porte plus les éventuels travaux de sécurisation. Faire refaire des clés sur un cylindre existant coûte beaucoup moins cher qu'un changement complet de serrure. Nous vous expliquons toutes les options avec leurs tarifs respectifs pour que vous puissiez choisir en connaissance de cause.",
-        emergency: "En cas de perte de clés avec suspicion de vol, nous intervenons en urgence absolue car votre sécurité est en jeu. Nous pouvons installer temporairement un verrou de sécurité en attendant le changement définitif de la serrure principale."
+        process: "Notre méthode : ouverture propre, remplacement de cylindre si nécessaire, devis gratuit avant intervention, pièces certifiées, garantie 1 an. En cas de vol ou de perte, le risque d'intrusion est réel. Mieux vaut remplacer immédiatement le cylindre pour protéger votre domicile et faire valoir votre assurance.",
+        price: "Souvent remboursé par votre assurance habitation ou carte bleue (selon conditions). La serrure peut être remplacée si vous le souhaitez, pour la sécurité, nous le faisons sur place.",
+        emergency: "Moins de 30 min généralement. 24/7, week-ends et jours fériés inclus. Partout dans le Var.",
+        zones: "Intervention dans tout le Var : Toulon, Fréjus, Draguignan, Hyères, La Seyne et tous les villages."
       }
     },
     "apres-cambriolage": {
