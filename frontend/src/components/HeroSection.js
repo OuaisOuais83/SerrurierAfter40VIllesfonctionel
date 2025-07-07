@@ -9,12 +9,20 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1529261233619-6afa28f5da3d')",
-          }}
-        />
+        <picture>
+          <source 
+            srcSet="https://images.unsplash.com/photo-1529261233619-6afa28f5da3d?w=1920&h=1080&fit=crop&fm=webp&q=80" 
+            type="image/webp"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1529261233619-6afa28f5da3d?w=1920&h=1080&fit=crop&fm=jpg&q=75"
+            alt="Serrurier urgence Var ouverture porte"
+            className="w-full h-full object-cover"
+            loading="eager"
+            width="1920"
+            height="1080"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-blue-700/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
       </div>
