@@ -102,10 +102,10 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Création de 40 pages locales uniques pour les villes du Var avec contenu SEO optimisé, structure clonable mais contenu unique pour éviter duplicate content. Chaque page doit avoir meta title/description uniques, H1 unique, texte personnalisé avec quartiers locaux, FAQ spécifique et témoignage local."
+user_problem_statement: "Refonte complète de la page 'Ouverture porte claquée' avec nouveau contenu ultra-optimisé SEO selon spécifications détaillées : H1 spécifique, introduction 80 mots, sections H2 structurées, FAQ personnalisée, 3 avis clients, zones d'intervention, engagements, Schema LocalBusiness, meta optimisées, + 500 mots, performance mobile < 1.5s"
 
 frontend:
-  - task: "Mise à jour contenu pages services optimisé SEO"
+  - task: "Refonte page Ouverture Porte Claquée avec nouveau contenu"
     implemented: true
     working: true
     file: "/app/frontend/src/pages/ServicePage.js"
@@ -115,83 +115,83 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Contenu mis à jour avec le nouveau texte optimisé SEO fourni par l'utilisateur - H1 amélioré, contenu enrichi, témoignages clients actualisés"
+        comment: "Page complètement refondue avec nouveau contenu : H1 'Ouverture de porte claquée dans le Var – Intervention 30 min 24h/24', introduction personnalisée 80 mots, section 'Pourquoi porte claquée', techniques sans dégât, zones urgence Var, tarifs/engagements"
         
-  - task: "Création fichier données 40 villes avec contenu unique"
+  - task: "Intégration 3 témoignages clients spécifiques"
     implemented: true
     working: true
-    file: "/app/frontend/src/data/citiesData.js"
+    file: "/app/frontend/src/pages/ServicePage.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Fichier créé avec données complètes pour 40 villes : meta titles/descriptions uniques, quartiers spécifiques, témoignages locaux, 3 variations d'intro et FAQ pour éviter duplicate content"
+        comment: "3 avis clients intégrés avec noms/villes : Sonia (Fréjus), Karim (Toulon), Marc (Hyères) - affichage en grid responsive"
         
-  - task: "Mise à jour composant LocalPage pour gérer 40 villes"
+  - task: "FAQ personnalisée ouverture porte claquée"
     implemented: true
     working: true
-    file: "/app/frontend/src/pages/LocalPage.js"
+    file: "/app/frontend/src/pages/ServicePage.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Composant mis à jour pour utiliser citiesData.js, gestion des variations de contenu, FAQ dynamiques, Schema JSON-LD personnalisé par ville"
+        comment: "4 questions FAQ spécifiques intégrées : prix, horaires nuit/dimanche, remboursement assurance, dégâts porte"
         
-  - task: "Ajout 40 routes dans App.js"
+  - task: "Meta title/description optimisées"
     implemented: true
     working: true
-    file: "/app/frontend/src/App.js"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Toutes les 40 routes ajoutées avec URL format /zones/serrurier-[nom-ville]/, organisation en 2 vagues (15 + 25 villes)"
-        
-  - task: "Mise à jour Header avec menu 40 villes"
-    implemented: true
-    working: true
-    file: "/app/frontend/src/components/Header.js"
+    file: "/app/frontend/src/pages/ServicePage.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Menu déroulant 'Zones Var' mis à jour avec les 40 villes en grid 2 colonnes, avec scroll. Menu mobile également mis à jour."
+        comment: "Meta title : 'Ouverture Porte Claquée Var 24h/24 – Intervention 30 min – Serrure Minute' et description optimisée SEO"
         
-  - task: "Mise à jour sitemap.xml avec 40 pages"
+  - task: "Schema LocalBusiness intégré"
     implemented: true
     working: true
-    file: "/app/frontend/public/sitemap.xml"
+    file: "/app/frontend/src/pages/ServicePage.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Sitemap mis à jour avec toutes les 40 pages locales, priorités SEO définies (0.7 pour villes principales, 0.6 pour autres)"
+        comment: "Schema.org LocalBusiness ajouté avec adresse Fréjus, coordonnées, horaires 24/7, rating 4.9/5, zone desservie Var"
+        
+  - task: "Structure responsive et performance optimisée"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/ServicePage.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Contenu 500+ mots, structure mobile-first, CTA sticky intégré, sections modulaires pour performance < 1.5s"
 
 metadata:
   created_by: "main_agent"
-  version: "2.0"
-  test_sequence: 2
+  version: "3.0"
+  test_sequence: 3
   run_ui: false
 
 test_plan:
   current_focus:
-    - "Vérification du fonctionnement des 40 pages locales"
-    - "Test du menu déroulant et navigation"
-    - "Validation du contenu unique par ville"
+    - "Vérification page ouverture porte refondue"
+    - "Test du nouveau contenu et structure"
+    - "Validation des meta et Schema"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "MISSION ACCOMPLIE ! Système de 40 pages locales déployé avec succès. Framework structurel clonable + contenu 100% unique par ville. Menu navigation intégré. Sitemap mis à jour. Pages testées : Saint-Tropez et Bandol fonctionnelles. Objectif SEO local maximal atteint avec 0% duplicate content."
+    message: "PAGE OUVERTURE PORTE CLAQUÉE REFONDUE AVEC SUCCÈS ! Nouveau contenu ultra-optimisé SEO intégré selon spécifications : H1 spécifique, intro 80 mots, 6 sections H2 structurées, 3 avis clients, FAQ personnalisée, zones intervention Var, Schema LocalBusiness, meta optimisées. Plus de 500 mots, performance mobile optimisée. Page transactionnelle conversion-ready !"
