@@ -440,6 +440,34 @@ const ServicePage = ({ type }) => {
         </div>
       </section>
 
+      {/* Testimonial */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">Témoignage client</h2>
+            <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center justify-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 italic mb-6">
+                "{service.testimonial.text}"
+              </p>
+              <div className="flex items-center justify-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                  {service.testimonial.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">{service.testimonial.name}</p>
+                  <p className="text-gray-600">{service.testimonial.city}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Emergency CTA */}
       <section className="py-20 bg-gradient-to-r from-red-500 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
