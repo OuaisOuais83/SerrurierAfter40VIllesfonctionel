@@ -242,50 +242,83 @@ const ServicePage = ({ type }) => {
               <p className="text-gray-700 leading-relaxed text-lg mb-8">
                 {service.content.intro}
               </p>
-              {/* CTA Button intégré */}
-              <div className="my-8 text-center">
-                <a
-                  href="tel:+33786356139"
-                  className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full font-bold text-lg space-x-3 transition-all duration-300 shadow-lg"
-                >
-                  <Phone className="w-6 h-6" />
-                  <span>Appeler maintenant</span>
-                </a>
-              </div>
+              {/* CTA Button intégré pour ouverture porte uniquement */}
+              {type === 'ouverture-porte' && (
+                <div className="my-8 text-center">
+                  <a
+                    href="tel:+33786356139"
+                    className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full font-bold text-lg space-x-3 transition-all duration-300 shadow-lg"
+                  >
+                    <Phone className="w-6 h-6" />
+                    <span>Appeler maintenant</span>
+                  </a>
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Pourquoi porte claquée */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                Pourquoi une porte se claque-t-elle ?
-              </h2>
-              <p className="text-gray-700 leading-relaxed text-lg mb-8">
-                {service.content.causesText}
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {service.content.causes.map((cause, index) => (
-                  <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md">
-                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <AlertTriangle className="w-5 h-5 text-red-600" />
+      {/* Pourquoi porte claquée - uniquement pour ouverture porte */}
+      {type === 'ouverture-porte' && service.content.causesText && (
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                  Pourquoi une porte se claque-t-elle ?
+                </h2>
+                <p className="text-gray-700 leading-relaxed text-lg mb-8">
+                  {service.content.causesText}
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {service.content.causes.map((cause, index) => (
+                    <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md">
+                      <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <AlertTriangle className="w-5 h-5 text-red-600" />
+                      </div>
+                      <p className="text-gray-700">{cause}</p>
                     </div>
-                    <p className="text-gray-700">{cause}</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {/* Causes communes - pour autres services */}
+      {type !== 'ouverture-porte' && (
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                  Causes fréquentes
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {service.content.causes.map((cause, index) => (
+                    <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md">
+                      <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <AlertTriangle className="w-5 h-5 text-red-600" />
+                      </div>
+                      <p className="text-gray-700">{cause}</p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Techniques d'ouverture */}
       <section className="py-20 bg-white">
