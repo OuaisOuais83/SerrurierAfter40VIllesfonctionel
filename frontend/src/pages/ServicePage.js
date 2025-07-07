@@ -8,32 +8,70 @@ import Footer from "../components/Footer";
 const ServicePage = ({ type }) => {
   const services = {
     "ouverture-porte": {
-      title: "Ouverture de Porte Claquée dans le Var (83)",
-      subtitle: "Intervention Urgence 24h/24",
-      description: "Vous êtes bloqué dehors, porte claquée ? Serrure Minute intervient partout dans le Var en moins de 30 minutes, 24h/24 et 7j/7. Ouverture sans dégât, devis gratuit.",
+      title: "Ouverture de porte claquée dans le Var",
+      subtitle: "Intervention 30 min 24h/24",
+      description: "Serrurier Var – Ouverture porte claquée 24h/24, devis gratuit, agréé assurances, intervention 30 min sans casse.",
       icon: DoorOpen,
       image: "https://images.pexels.com/photos/830899/pexels-photo-830899.jpeg",
       color: "from-blue-500 to-blue-600",
-      metaTitle: "Ouverture Porte Claquée Var (83) – Serrurier 24/24",
+      metaTitle: "Ouverture Porte Claquée Var 24h/24 – Intervention 30 min – Serrure Minute",
       canonical: "https://serrure-minute-var.com/urgences/ouverture-porte-claquee",
-      testimonial: {
-        name: "Sophie",
-        city: "Fréjus",
-        text: "Porte claquée à Fréjus dimanche soir, ils sont venus en 25 min, porte ouverte sans rien casser. Parfait."
-      },
+      testimonials: [
+        {
+          name: "Sonia",
+          city: "Fréjus",
+          text: "Intervention rapide à Fréjus un dimanche soir, porte ouverte en 15 minutes sans aucune casse. Je recommande !"
+        },
+        {
+          name: "Karim",
+          city: "Toulon", 
+          text: "Clé oubliée à l'intérieur, dépannage en moins de 30 min, prix annoncé à l'avance, parfait."
+        },
+        {
+          name: "Marc",
+          city: "Hyères",
+          text: "Service très professionnel, disponible même un jour férié, merci encore !"
+        }
+      ],
       content: {
-        intro: "Vous êtes bloqué dehors, porte claquée derrière vous ? Pas de panique. Serrure Minute intervient partout dans le Var en moins de 30 minutes, 24h/24 et 7j/7, même les jours fériés. Nos artisans serruriers expérimentés ouvrent votre porte sans dégât et au meilleur prix, devis gratuit avant chaque intervention.",
+        intro: "Vous êtes bloqué dehors à cause d'une porte claquée ? Pas de panique : Serrure Minute intervient en moins de 30 minutes dans tout le Var, de Fréjus à Toulon. Notre serrurier, agréé assurances, vous dépanne 24h/24, 7j/7, même les dimanches et jours fériés, y compris Noël et le 1er janvier. Avec notre devis gratuit et nos prix fixes, vous bénéficiez d'une ouverture sans casse et d'une garantie d'un an. Appelez maintenant pour une intervention immédiate.",
         causes: [
-          "Courant d'air qui claque la porte",
-          "Clé oubliée à l'intérieur",
-          "Enfant qui ferme la porte",
-          "Serrure qui se bloque spontanément",
-          "Mécanisme défaillant"
+          "Courant d'air pendant l'été avec fenêtres ouvertes",
+          "Clés oubliées à l'intérieur en sortant rapidement",
+          "Enfants qui referment la porte en jouant",
+          "Défauts de la serrure ou mécanismes fatigués",
+          "Claquage inattendu dû à l'usure"
         ],
-        process: "Notre méthode d'ouverture sans dommage : techniques d'ouverture fines (radio, crochetage), aucun perçage inutile, respect total de votre cylindre, travail propre et garanti. Nos serruriers sont équipés d'outils professionnels et interviennent rapidement dans tout le Var, y compris Toulon, Fréjus, Draguignan, Hyères, La Seyne et tous les villages alentours.",
-        price: "À partir de 90€, devis gratuit avant intervention. Intervention sans casse, garantie 1 an, remboursable par votre assurance habitation, agréé assurances et carte bleue.",
-        emergency: "30 minutes maximum sur place. Disponibles 24/7, jours fériés, nuits, dimanches compris. Devis annoncé avant toute opération.",
-        zones: "Var Est : Fréjus, Saint-Raphaël, Puget. Var Ouest : Toulon, Hyères, La Seyne. Haut-Var : Draguignan, Brignoles."
+        causesText: "Dans le Var, beaucoup de portes claquées proviennent d'un simple courant d'air, surtout pendant l'été lorsque les fenêtres restent ouvertes. Il est également fréquent d'oublier ses clés à l'intérieur en sortant rapidement. Les enfants, en jouant, referment parfois la porte sans prévenir. Enfin, des défauts de la serrure ou des mécanismes fatigués peuvent entraîner un claquage inattendu. Ces situations sont courantes et nécessitent un professionnel formé pour ouvrir sans dégât.",
+        process: "Nos artisans utilisent des outils précis, comme la radio, le by-pass ou le crochet professionnel, afin d'ouvrir votre porte claquée sans casser la serrure ni détériorer votre porte. Nous respectons toujours l'intégrité de votre installation. Notre savoir-faire garantit une remise en service immédiate, évitant tout remplacement inutile et limitant vos frais.",
+        zones: ["Fréjus", "Toulon", "Hyères", "Draguignan", "La Seyne-sur-Mer", "Saint-Raphaël", "Brignoles", "Sanary-sur-Mer", "Six-Fours-les-Plages"],
+        price: "Nous proposons un devis gratuit annoncé avant l'intervention. Nos tarifs sont transparents et fixes, sans surprise ni surfacturation. Dans la majorité des cas, l'ouverture d'une porte claquée est remboursée par votre assurance habitation ou votre carte bancaire (selon les clauses de votre contrat). Vous bénéficiez également d'une garantie d'un an sur notre prestation.",
+        emergency: "Serrure Minute intervient sous 30 minutes partout dans le Var. Interventions possibles 24h/24, 7j/7, y compris jours fériés.",
+        faqs: [
+          {
+            question: "Quel est le prix d'une ouverture de porte claquée ?",
+            answer: "Cela dépend de l'heure et du type de porte. Un devis gratuit est annoncé à l'avance, sans surprise."
+          },
+          {
+            question: "Est-ce que vous intervenez la nuit ou le dimanche ?",
+            answer: "Oui, 24h/24, 7j/7, même les jours fériés comme Noël."
+          },
+          {
+            question: "Est-ce remboursé par l'assurance ?",
+            answer: "Dans la plupart des cas, oui. Nous vous aidons à remplir la déclaration si besoin."
+          },
+          {
+            question: "Ma porte sera-t-elle endommagée ?",
+            answer: "Non, nos techniques garantissent une ouverture sans dégât."
+          }
+        ],
+        engagements: [
+          "Intervention 30 minutes",
+          "Devis gratuit", 
+          "Garantie 1 an",
+          "Remboursement par assurance habitation / CB",
+          "Artisan agréé assurances"
+        ]
       }
     },
     "serrure-bloquee": {
