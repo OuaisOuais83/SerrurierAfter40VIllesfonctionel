@@ -269,6 +269,457 @@ export const citiesData = {
       district: "Centre ancien",
       text: "Clé cassée dans vieille serrure du centre ancien. Technicien patient, extraction minutieuse réussie. Travail d'artisan !"
     }
+  },
+  
+  // === DEUXIÈME VAGUE - 25 VILLES RESTANTES ===
+  "cogolin": {
+    name: "Cogolin",
+    slug: "cogolin",
+    title: "Serrurier à Cogolin (83)",
+    subtitle: "Dépannage serrurerie 24h/24 Cogolin",
+    description: "Serrurier Cogolin : urgence serrure 24h/24, porte bloquée, clé perdue, intervention 30min, devis gratuit, agréé assurances.",
+    metaTitle: "Serrurier Cogolin (83) – Dépannage 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-cogolin",
+    districts: ["Centre-ville", "Marines de Cogolin", "Pardigon", "Cavalaire", "Route de Gassin", "Zone artisanale", "Port de plaisance", "Golfe de Saint-Tropez"],
+    landmarks: ["Marines de Cogolin", "Place de la République", "Musée Raimu", "Port de plaisance"],
+    introVariation: 1,
+    testimonial: {
+      name: "Antoine R.",
+      district: "Marines de Cogolin",
+      text: "Serrure bloquée aux Marines, serrurier arrivé rapidement malgré l'accès compliqué. Déblocage parfait, prix honnête !"
+    }
+  },
+
+  "saint-cyr-sur-mer": {
+    name: "Saint-Cyr-sur-Mer",
+    slug: "saint-cyr-sur-mer",
+    title: "Serrurier à Saint-Cyr-sur-Mer (83)",
+    subtitle: "Service serrurerie urgence 24/7 Saint-Cyr",
+    description: "Serrurier Saint-Cyr-sur-Mer : dépannage urgent 24h/24, ouverture porte, serrure cassée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Saint-Cyr-sur-Mer (83) – Service Urgence 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-saint-cyr-sur-mer",
+    districts: ["Les Lecques", "La Madrague", "Centre-ville", "Place Portalis", "Nouveau Port", "Port d'Alon", "Bandol-Est", "Route des Lecques"],
+    landmarks: ["Plage des Lecques", "Port de La Madrague", "Statue de la Liberté", "Villa romaine"],
+    introVariation: 2,
+    testimonial: {
+      name: "Valérie C.",
+      district: "Les Lecques",
+      text: "Clé cassée aux Lecques en pleine saison. Technicien efficace, extraction propre, cylindre sauvé. Service au top !"
+    }
+  },
+
+  "le-pradet": {
+    name: "Le Pradet",
+    slug: "le-pradet",
+    title: "Serrurier au Pradet (83)",
+    subtitle: "Intervention serrurerie express 24h/24 Le Pradet",
+    description: "Serrurier Le Pradet : urgence 24h/24, porte claquée, clé perdue, serrure bloquée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Le Pradet (83) – Intervention Express 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-le-pradet",
+    districts: ["Centre-ville", "Les Oursinières", "Le Pin de Galle", "Monaco", "Garonne", "La Rade", "Port des Oursinières", "Côte d'Azur"],
+    landmarks: ["Port des Oursinières", "Plage de Monaco", "Sentier littoral", "Marché provençal"],
+    introVariation: 3,
+    testimonial: {
+      name: "Sébastien F.",
+      district: "Les Oursinières",
+      text: "Porte claquée aux Oursinières dimanche matin. Intervention ultra-rapide, ouverture sans dégât. Parfait !"
+    }
+  },
+
+  "la-crau": {
+    name: "La Crau",
+    slug: "la-crau",
+    title: "Serrurier à La Crau (83)",
+    subtitle: "Dépannage serrurerie 24/7 La Crau",
+    description: "Serrurier La Crau : urgence serrure 24h/24, ouverture porte, clé cassée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier La Crau (83) – Dépannage 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-la-crau",
+    districts: ["Centre-ville", "La Moutonne", "La Farlède", "Place Victor Hugo", "Zone commerciale", "Les Bousquets", "Quartier résidentiel", "Route de Toulon"],
+    landmarks: ["Place Victor Hugo", "Centre commercial", "Parc de La Moutonne", "Église Saint-André"],
+    introVariation: 1,
+    testimonial: {
+      name: "Patricia L.",
+      district: "La Moutonne",
+      text: "Serrure forcée à La Moutonne, sécurisation immédiate et contact assurance géré. Service complet et rassurant !"
+    }
+  },
+
+  "cuers": {
+    name: "Cuers",
+    slug: "cuers",
+    title: "Serrurier à Cuers (83)",
+    subtitle: "Service serrurerie urgence 24h/24 Cuers",
+    description: "Serrurier Cuers : dépannage urgent 24h/24, porte bloquée, serrure grippée, perte clés, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Cuers (83) – Service Urgence 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-cuers",
+    districts: ["Centre historique", "Les Bousquets", "Pierrefeu", "Route de Carnoules", "Zone d'activités", "Quartier des Blaquières", "Sainte-Marguerite", "Le Colombier"],
+    landmarks: ["Église Saint-Pierre", "Château de Cuers", "Marché provençal", "Cours de la République"],
+    introVariation: 2,
+    testimonial: {
+      name: "Franck B.",
+      district: "Centre historique",
+      text: "Clé perdue dans le centre historique. Serrurier respectueux du patrimoine, remplacement discret. Très pro !"
+    }
+  },
+
+  "vidauban": {
+    name: "Vidauban",
+    slug: "vidauban",
+    title: "Serrurier à Vidauban (83)",
+    subtitle: "Intervention serrurerie express 24/7 Vidauban",
+    description: "Serrurier Vidauban : urgence 24h/24, ouverture porte claquée, serrure bloquée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Vidauban (83) – Intervention Express 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-vidauban",
+    districts: ["Centre-ville", "Les Ferrages", "Taradeau", "Trans-en-Provence", "Zone viticole", "Quartier des Vignes", "Route de Draguignan", "Le Thoronet"],
+    landmarks: ["Maison des vins", "Château de Berne", "Vignobles", "Place de la Liberté"],
+    introVariation: 3,
+    testimonial: {
+      name: "Michel G.",
+      district: "Les Ferrages",
+      text: "Porte bloquée aux Ferrages, intervention nocturne rapide. Ouverture propre, tarif respecté. Recommandé !"
+    }
+  },
+
+  "sollies-pont": {
+    name: "Solliès-Pont",
+    slug: "sollies-pont",
+    title: "Serrurier à Solliès-Pont (83)",
+    subtitle: "Dépannage serrurerie 24h/24 Solliès-Pont",
+    description: "Serrurier Solliès-Pont : urgence serrure 24h/24, porte claquée, clé cassée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Solliès-Pont (83) – Dépannage 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-sollies-pont",
+    districts: ["Centre-ville", "Solliès-Ville", "La Foux", "Le Revest", "Belgentier", "Zone commerciale", "Quartier résidentiel", "Route de Toulon"],
+    landmarks: ["Château de Solliès", "Foire aux figues", "Gapeau", "Place de la République"],
+    introVariation: 1,
+    testimonial: {
+      name: "Christelle M.",
+      district: "Solliès-Ville",
+      text: "Serrure grippée à Solliès-Ville, déblocage rapide sans remplacement. Prix correct et service efficace !"
+    }
+  },
+
+  "bormes-les-mimosas": {
+    name: "Bormes-les-Mimosas",
+    slug: "bormes-les-mimosas",
+    title: "Serrurier à Bormes-les-Mimosas (83)",
+    subtitle: "Service serrurerie urgence 24/7 Bormes",
+    description: "Serrurier Bormes-les-Mimosas : dépannage urgent 24h/24, ouverture porte, serrure bloquée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Bormes-les-Mimosas (83) – Service Urgence 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-bormes-les-mimosas",
+    districts: ["Village médiéval", "La Favière", "Cabasson", "Le Pin de Bormes", "Cap de Brégancon", "Port de plaisance", "Pellegrino", "Fort de Brégançon"],
+    landmarks: ["Village fleuri", "Fort de Brégançon", "Port de la Favière", "Château de Bormes"],
+    introVariation: 2,
+    testimonial: {
+      name: "Stéphane D.",
+      district: "La Favière",
+      text: "Clé perdue à La Favière, remplacement cylindre immédiat. Technicien discret et professionnel. Parfait !"
+    }
+  },
+
+  "bandol": {
+    name: "Bandol",
+    slug: "bandol",
+    title: "Serrurier à Bandol (83)",
+    subtitle: "Intervention serrurerie express 24h/24 Bandol",
+    description: "Serrurier Bandol : urgence 24h/24, porte claquée, clé cassée, serrure grippée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Bandol (83) – Intervention Express 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-bandol",
+    districts: ["Centre-ville", "Port de Bandol", "Rènecros", "Les Baumelles", "Sanary-Ouest", "Zone viticole", "Casino", "Front de mer"],
+    landmarks: ["Port de Bandol", "Casino", "Île de Bendor", "Vignobles AOC"],
+    introVariation: 3,
+    testimonial: {
+      name: "Caroline P.",
+      district: "Port de Bandol",
+      text: "Porte claquée près du port en pleine nuit. Intervention rapide, ouverture sans casse. Service fiable !"
+    }
+  },
+
+  "le-beausset": {
+    name: "Le Beausset",
+    slug: "le-beausset",
+    title: "Serrurier au Beausset (83)",
+    subtitle: "Dépannage serrurerie 24/7 Le Beausset",
+    description: "Serrurier Le Beausset : urgence serrure 24h/24, ouverture porte, clé perdue, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Le Beausset (83) – Dépannage 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-le-beausset",
+    districts: ["Centre-ville", "Le Camp", "Évenos", "Circuit Paul Ricard", "Zone commerciale", "Quartier résidentiel", "Route d'Ollioules", "Les Vignes"],
+    landmarks: ["Circuit Paul Ricard", "Chapelle Notre-Dame", "Marché provençal", "Centre commercial"],
+    introVariation: 1,
+    testimonial: {
+      name: "Éric T.",
+      district: "Le Camp",
+      text: "Serrure forcée au Camp, sécurisation immédiate et remplacement. Contact assurance géré, très pro !"
+    }
+  },
+
+  "carqueiranne": {
+    name: "Carqueiranne",
+    slug: "carqueiranne",
+    title: "Serrurier à Carqueiranne (83)",
+    subtitle: "Service serrurerie urgence 24h/24 Carqueiranne",
+    description: "Serrurier Carqueiranne : dépannage urgent 24h/24, porte bloquée, serrure cassée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Carqueiranne (83) – Service Urgence 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-carqueiranne",
+    districts: ["Centre-ville", "Les Salins", "Port des Salettes", "Carqueiranne-Plage", "Les Terrasses", "Route de Hyères", "La Capte", "Giens-Ouest"],
+    landmarks: ["Port des Salettes", "Château de Carqueiranne", "Plage de Carqueiranne", "Parc Sainte-Claire"],
+    introVariation: 2,
+    testimonial: {
+      name: "Sandrine L.",
+      district: "Les Salins",
+      text: "Clé cassée aux Salins, extraction professionnelle réussie. Cylindre intact, prix raisonnable. Merci !"
+    }
+  },
+
+  "fayence": {
+    name: "Fayence",
+    slug: "fayence",
+    title: "Serrurier à Fayence (83)",
+    subtitle: "Intervention serrurerie express 24/7 Fayence",
+    description: "Serrurier Fayence : urgence 24h/24, ouverture porte claquée, serrure bloquée, perte clés, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Fayence (83) – Intervention Express 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-fayence",
+    districts: ["Village perché", "Tourrettes", "Seillans", "Mons", "Golf de Fayence", "Aérodrome", "Route de Grasse", "Pays de Fayence"],
+    landmarks: ["Village perché", "Golf de Fayence", "Aérodrome", "Table d'orientation"],
+    introVariation: 3,
+    testimonial: {
+      name: "Jean-Claude R.",
+      district: "Village perché",
+      text: "Porte bloquée dans le village perché. Serrurier arrivé rapidement malgré l'accès difficile. Top !"
+    }
+  },
+
+  "la-londe-les-maures": {
+    name: "La Londe-les-Maures",
+    slug: "la-londe-les-maures",
+    title: "Serrurier à La Londe-les-Maures (83)",
+    subtitle: "Dépannage serrurerie 24h/24 La Londe",
+    description: "Serrurier La Londe-les-Maures : urgence serrure 24h/24, porte claquée, clé cassée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier La Londe-les-Maures (83) – Dépannage 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-la-londe-les-maures",
+    districts: ["Centre-ville", "Miramar", "L'Argentière", "Pellegrin", "Port de Miramar", "Massif des Maures", "Domaine du Rayol", "Côte des Maures"],
+    landmarks: ["Port de Miramar", "Domaine du Rayol", "Massif des Maures", "Plage de l'Argentière"],
+    introVariation: 1,
+    testimonial: {
+      name: "Nathalie V.",
+      district: "Miramar",
+      text: "Serrure grippée à Miramar, déblocage rapide et efficace. Pas de remplacement nécessaire, parfait !"
+    }
+  },
+
+  "le-muy": {
+    name: "Le Muy",
+    slug: "le-muy",
+    title: "Serrurier au Muy (83)",
+    subtitle: "Service serrurerie urgence 24/7 Le Muy",
+    description: "Serrurier Le Muy : dépannage urgent 24h/24, ouverture porte, serrure bloquée, clé perdue, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Le Muy (83) – Service Urgence 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-le-muy",
+    districts: ["Centre-ville", "Les Arcs", "Taradeau", "Vidauban-Sud", "Route de Draguignan", "Zone d'activités", "Les Cabassols", "Route de Fréjus"],
+    landmarks: ["Tour Charles Quint", "Musée de la Libération", "Place de la Libération", "Porte Sarrasine"],
+    introVariation: 2,
+    testimonial: {
+      name: "Thierry K.",
+      district: "Centre-ville",
+      text: "Clé perdue près de la Tour Charles Quint. Remplacement immédiat, travail discret et pro. Recommandé !"
+    }
+  },
+
+  "saint-tropez": {
+    name: "Saint-Tropez",
+    slug: "saint-tropez",
+    title: "Serrurier à Saint-Tropez (83)",
+    subtitle: "Intervention serrurerie express 24h/24 Saint-Tropez",
+    description: "Serrurier Saint-Tropez : urgence 24h/24, porte claquée, clé cassée, serrure de luxe, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Saint-Tropez (83) – Intervention Express 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-saint-tropez",
+    districts: ["Vieux Port", "La Ponche", "Les Graniers", "Pampelonne", "Ramatuelle", "Les Salins", "Gassin", "Presqu'île"],
+    landmarks: ["Vieux Port", "Citadelle", "Place des Lices", "Musée de l'Annonciade"],
+    introVariation: 3,
+    testimonial: {
+      name: "Alexandre M.",
+      district: "Vieux Port",
+      text: "Serrure haut de gamme bloquée près du Vieux Port. Technicien spécialisé, déblocage délicat réussi. Parfait !"
+    }
+  },
+
+  "lorgues": {
+    name: "Lorgues",
+    slug: "lorgues",
+    title: "Serrurier à Lorgues (83)",
+    subtitle: "Dépannage serrurerie 24/7 Lorgues",
+    description: "Serrurier Lorgues : urgence serrure 24h/24, ouverture porte, clé perdue, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Lorgues (83) – Dépannage 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-lorgues",
+    districts: ["Centre historique", "Thoronet", "Entrecasteaux", "Route de Draguignan", "Zone viticole", "Les Arcs-sur-Argens", "Carcès", "Abbaye du Thoronet"],
+    landmarks: ["Collégiale Saint-Martin", "Cours de la République", "Vignobles", "Abbaye du Thoronet"],
+    introVariation: 1,
+    testimonial: {
+      name: "Brigitte F.",
+      district: "Centre historique",
+      text: "Porte claquée dans le centre historique. Intervention respectueuse du patrimoine, ouverture propre. Top !"
+    }
+  },
+
+  "pierrefeu-du-var": {
+    name: "Pierrefeu-du-Var",
+    slug: "pierrefeu-du-var",
+    title: "Serrurier à Pierrefeu-du-Var (83)",
+    subtitle: "Service serrurerie urgence 24h/24 Pierrefeu",
+    description: "Serrurier Pierrefeu-du-Var : dépannage urgent 24h/24, porte bloquée, serrure cassée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Pierrefeu-du-Var (83) – Service Urgence 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-pierrefeu-du-var",
+    districts: ["Centre-ville", "Collobrières", "Puget-Ville", "Route de Cuers", "Zone viticole", "Massif des Maures", "La Môle", "Cogolin-Nord"],
+    landmarks: ["Château de Pierrefeu", "Vignobles", "Massif des Maures", "Place de la République"],
+    introVariation: 2,
+    testimonial: {
+      name: "Didier P.",
+      district: "Centre-ville",
+      text: "Serrure forcée au centre-ville, sécurisation immédiate. Contact assurance géré, service complet !"
+    }
+  },
+
+  "le-luc": {
+    name: "Le Luc",
+    slug: "le-luc",
+    title: "Serrurier au Luc (83)",
+    subtitle: "Intervention serrurerie express 24/7 Le Luc",
+    description: "Serrurier Le Luc : urgence 24h/24, ouverture porte claquée, serrure bloquée, clé cassée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Le Luc (83) – Intervention Express 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-le-luc",
+    districts: ["Centre-ville", "Cabasse", "Flassans", "Route de Draguignan", "Gare TGV", "Zone d'activités", "Le Cannet", "Les Mayons"],
+    landmarks: ["Gare TGV", "Tour de l'Horloge", "Musée du Timbre", "Place Louis Brunet"],
+    introVariation: 3,
+    testimonial: {
+      name: "Fabrice L.",
+      district: "Gare TGV",
+      text: "Clé perdue près de la gare TGV. Remplacement rapide, j'ai pu reprendre mon train. Service efficace !"
+    }
+  },
+
+  "gareoult": {
+    name: "Garéoult",
+    slug: "gareoult",
+    title: "Serrurier à Garéoult (83)",
+    subtitle: "Dépannage serrurerie 24h/24 Garéoult",
+    description: "Serrurier Garéoult : urgence serrure 24h/24, porte claquée, clé perdue, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Garéoult (83) – Dépannage 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-gareoult",
+    districts: ["Centre-ville", "Signes", "Méounes", "Route de Toulon", "Zone commerciale", "La Ciotat", "Rocbaron", "Forcalqueiret"],
+    landmarks: ["Place de la Liberté", "Église Notre-Dame", "Route des vins", "Centre commercial"],
+    introVariation: 1,
+    testimonial: {
+      name: "Martine B.",
+      district: "Centre-ville",
+      text: "Serrure grippée au centre-ville, déblocage rapide sans remplacement. Prix honnête et service pro !"
+    }
+  },
+
+  "grimaud": {
+    name: "Grimaud",
+    slug: "grimaud",
+    title: "Serrurier à Grimaud (83)",
+    subtitle: "Service serrurerie urgence 24/7 Grimaud",
+    description: "Serrurier Grimaud : dépannage urgent 24h/24, ouverture porte, serrure bloquée, clé cassée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Grimaud (83) – Service Urgence 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-grimaud",
+    districts: ["Village médiéval", "Port Grimaud", "Cogolin-Est", "Saint-Tropez-Nord", "Marina", "Les Marines", "Beauvallon", "Sainte-Maxime-Ouest"],
+    landmarks: ["Château de Grimaud", "Port Grimaud", "Village médiéval", "Golfe de Saint-Tropez"],
+    introVariation: 2,
+    testimonial: {
+      name: "Corinne D.",
+      district: "Port Grimaud",
+      text: "Clé cassée à Port Grimaud, extraction délicate réussie. Technicien patient et professionnel. Parfait !"
+    }
+  },
+
+  "la-motte": {
+    name: "La Motte",
+    slug: "la-motte",
+    title: "Serrurier à La Motte (83)",
+    subtitle: "Intervention serrurerie express 24h/24 La Motte",
+    description: "Serrurier La Motte : urgence 24h/24, porte claquée, clé perdue, serrure grippée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier La Motte (83) – Intervention Express 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-la-motte",
+    districts: ["Centre-ville", "Les Arcs", "Draguignan-Sud", "Route de Fréjus", "Zone viticole", "Flayosc", "Trans", "Taradeau"],
+    landmarks: ["Château de La Motte", "Vignobles", "Route des vins", "Place du Village"],
+    introVariation: 3,
+    testimonial: {
+      name: "Alain C.",
+      district: "Centre-ville",
+      text: "Porte bloquée au centre-ville, ouverture rapide et soignée. Tarif correct, service recommandé !"
+    }
+  },
+
+  "puget-sur-argens": {
+    name: "Puget-sur-Argens",
+    slug: "puget-sur-argens",
+    title: "Serrurier à Puget-sur-Argens (83)",
+    subtitle: "Dépannage serrurerie 24/7 Puget-sur-Argens",
+    description: "Serrurier Puget-sur-Argens : urgence serrure 24h/24, ouverture porte, clé cassée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Puget-sur-Argens (83) – Dépannage 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-puget-sur-argens",
+    districts: ["Centre-ville", "Roquebrune", "Fréjus-Ouest", "Route de Bagnols", "Base Nature", "Saint-Aygulf-Nord", "Malpasset", "Les Caous"],
+    landmarks: ["Base Nature François Léotard", "Village perché", "Rocher de Puget", "Argens"],
+    introVariation: 1,
+    testimonial: {
+      name: "Sylvie M.",
+      district: "Base Nature",
+      text: "Serrure bloquée près de la Base Nature. Intervention rapide, déblocage sans casse. Service efficace !"
+    }
+  },
+
+  "carnoules": {
+    name: "Carnoules",
+    slug: "carnoules",
+    title: "Serrurier à Carnoules (83)",
+    subtitle: "Service serrurerie urgence 24h/24 Carnoules",
+    description: "Serrurier Carnoules : dépannage urgent 24h/24, porte bloquée, serrure cassée, clé perdue, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Carnoules (83) – Service Urgence 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-carnoules",
+    districts: ["Centre-ville", "Pignans", "Besse-sur-Issole", "Route de Brignoles", "Gonfaron", "Zone d'activités", "Le Luc-Sud", "Les Mayons"],
+    landmarks: ["Place de la République", "Église Saint-Cyprien", "Route des vins", "Forêt des Maures"],
+    introVariation: 2,
+    testimonial: {
+      name: "Bernard R.",
+      district: "Centre-ville",
+      text: "Clé perdue au centre-ville, remplacement immédiat. Serrurier ponctuel et professionnel. Très bien !"
+    }
+  },
+
+  "gonfaron": {
+    name: "Gonfaron",
+    slug: "gonfaron",
+    title: "Serrurier à Gonfaron (83)",
+    subtitle: "Intervention serrurerie express 24/7 Gonfaron",
+    description: "Serrurier Gonfaron : urgence 24h/24, ouverture porte claquée, serrure bloquée, intervention 30min, agréé assurances.",
+    metaTitle: "Serrurier Gonfaron (83) – Intervention Express 24/7 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-gonfaron",
+    districts: ["Centre-ville", "Carnoules", "Pignans", "Route du Luc", "Massif des Maures", "La Garde-Freinet", "Village des Tortues", "Forêt domaniale"],
+    landmarks: ["Village des Tortues", "Massif des Maures", "Place du Général de Gaulle", "Pont sur l'Argens"],
+    introVariation: 3,
+    testimonial: {
+      name: "Monique T.",
+      district: "Centre-ville",
+      text: "Porte claquée en pleine nuit, intervention rapide malgré l'isolement. Service fiable et rassurant !"
+    }
+  },
+
+  "cavalaire-sur-mer": {
+    name: "Cavalaire-sur-Mer",
+    slug: "cavalaire-sur-mer",
+    title: "Serrurier à Cavalaire-sur-Mer (83)",
+    subtitle: "Dépannage serrurerie 24h/24 Cavalaire",
+    description: "Serrurier Cavalaire-sur-Mer : urgence serrure 24h/24, porte claquée, clé cassée, intervention 30min, devis gratuit.",
+    metaTitle: "Serrurier Cavalaire-sur-Mer (83) – Dépannage 24h/24 – 30min",
+    canonical: "https://serrure-minute-var.com/zones/serrurier-cavalaire-sur-mer",
+    districts: ["Centre-ville", "Port de plaisance", "Pardigon", "La Croix-Valmer", "Débarquement", "Heraclea", "Route de Saint-Tropez", "Baie de Cavalaire"],
+    landmarks: ["Port de plaisance", "Plage du Débarquement", "Maison de la Mer", "Promenade de la Mer"],
+    introVariation: 1,
+    testimonial: {
+      name: "Véronique P.",
+      district: "Port de plaisance",
+      text: "Serrure grippée près du port, déblocage rapide en pleine saison. Technicien efficace, prix correct !"
+    }
   }
 };
 
