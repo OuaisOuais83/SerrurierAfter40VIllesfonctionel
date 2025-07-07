@@ -37,32 +37,33 @@ const ServicePage = ({ type }) => {
       }
     },
     "serrure-bloquee": {
-      title: "Serrure Bloquée – Clé Cassée",
-      subtitle: "Urgence Var 24h/24",
-      description: "Serrure bloquée ou clé cassée dans le Var ? Dépannage express 30 min, devis gratuit, 24/24. Appelez Serrure Minute.",
+      title: "Serrure Bloquée ou Clé Cassée",
+      subtitle: "Dépannage Urgence Var 24h/24",
+      description: "Clé qui tourne dans le vide ? Serrure coincée ou clé cassée ? Serrure Minute vous dépanne en urgence dans tout le Var (83), 24h/24 et 7j/7. Intervention en moins de 30 minutes.",
       icon: Lock,
       image: "https://images.pexels.com/photos/8985454/pexels-photo-8985454.jpeg",
       color: "from-purple-500 to-purple-600",
       metaTitle: "Serrure Bloquée ou Clé Cassée Var (83) – Dépannage 24/7",
       canonical: "https://serrure-minute-var.com/urgences/serrure-bloquee-clef-cassee",
       testimonial: {
-        name: "Benoît L.",
+        name: "Benoît",
         city: "Hyères",
-        text: "Serrure complètement bloquée un dimanche. L'équipe est venue rapidement et a réparé sans changer toute la serrure."
+        text: "Clé cassée un samedi soir, intervention en 20 minutes, serrure intacte après le passage. Merci !"
       },
       content: {
-        intro: "Une serrure bloquée ou une clé cassée dans la serrure peut transformer votre journée en cauchemar. Ces problèmes techniques nécessitent l'intervention d'un professionnel équipé d'outils spécialisés. Serrure Minute dispose d'une expertise de plus de 15 ans dans le dépannage de serrures de tous types : cylindre européen, serrure multipoints, serrure à gorges, serrure électronique.",
+        intro: "Clé qui tourne dans le vide ? Serrure coincée ou clé cassée à l'intérieur ? Serrure Minute vous dépanne en urgence dans tout le Var (83), 24h/24 et 7j/7. Nos artisans expérimentés interviennent en moins de 30 minutes avec du matériel professionnel pour résoudre la panne sans dégâts inutiles.",
         causes: [
-          "Usure naturelle du mécanisme de serrure",
-          "Clé forcée ou tournée trop brutalement",
+          "Usure naturelle du mécanisme",
+          "Tentative d'effraction",
+          "Clé abîmée ou forcée",
+          "Gel et humidité",
           "Corps étranger dans le cylindre",
-          "Gel en hiver qui bloque le mécanisme",
-          "Tentative d'effraction qui endommage la serrure",
-          "Clé usée qui se casse dans le cylindre"
+          "Vieillissement de la serrure"
         ],
-        process: "Notre diagnostic commence par une analyse précise du type de blocage. Pour une serrure bloquée, nous déterminons si le problème vient du cylindre, du mécanisme interne ou de la poignée. Pour une clé cassée, nous utilisons des extracteurs professionnels pour retirer le morceau sans endommager le cylindre. Dans 80% des cas, nous pouvons réparer sans changer la serrure complète.",
-        price: "Nos tarifs de dépannage serrure sont fixes et transparents. Le prix varie selon la complexité de l'intervention et les pièces à remplacer. Un simple déblocage coûte moins cher qu'un remplacement de cylindre. Tous nos devis sont gratuits et détaillés. Nous acceptons les paiements par carte bancaire et chèque.",
-        emergency: "Nos camions d'intervention sont équipés d'un stock important de cylindres, serrures et pièces détachées des principales marques : Fichet, Vachette, JPM, Muel, Picard. Cela nous permet de réparer immédiatement la plupart des pannes."
+        process: "Notre méthode : extraction de clé cassée sans abîmer le barillet, déblocage serrure grippée, remplacement si nécessaire avec marque certifiée, garantie 1 an. Nos serruriers diagnostiquent sur place et proposent la meilleure solution : réparation ou changement de cylindre.",
+        price: "À partir de 100€, devis gratuit avant intervention. Agréé assurances, garantie 1 an minimum sur nos interventions, sans majoration cachée, devis transparent.",
+        emergency: "30 minutes max. Disponibles 24/7, Var entier, même villages isolés. Prix annoncé d'avance.",
+        zones: "Toulon et environs, Fréjus / Saint-Raphaël, Draguignan / Haut Var, Brignoles."
       }
     },
     "perte-cles": {
