@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serrure-minute-var.com/sitemap.xml
